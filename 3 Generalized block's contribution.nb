@@ -1,0 +1,1756 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     92676,       1748]
+NotebookOptionsPosition[     90215,       1697]
+NotebookOutlinePosition[     90612,       1713]
+CellTagsIndexPosition[     90569,       1710]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Before reduction", "Title",
+ CellChangeTimes->{{3.952877262500175*^9, 
+  3.9528772658614187`*^9}},ExpressionUUID->"81359818-aa6e-44a7-a4f8-\
+0a6b99543ebd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Length", "@", "#"}], "&"}], "/@", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"DihedralPairing", "[", "faceLattice", "]"}], "[", 
+    RowBox[{"[", 
+     RowBox[{"All", ",", "2"}], "]"}], "]"}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.886851476589129*^9, 3.886851507136612*^9}, {
+   3.886851900992361*^9, 3.886851902956923*^9}, 3.947851727254142*^9, {
+   3.947861449753636*^9, 3.947861451268811*^9}},
+ CellLabel->"In[76]:=",ExpressionUUID->"23d400d9-889a-49f7-b940-1fb58d6c52b7"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", 
+   ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2", ",", "2"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.8868514867313843`*^9, 3.886851507465868*^9}, 
+   3.886851915065036*^9, {3.886851959901395*^9, 3.886851963263178*^9}, {
+   3.8868535933725367`*^9, 3.8868535982960873`*^9}, {3.887711952645534*^9, 
+   3.88771197265406*^9}, 3.8877126274249687`*^9, 3.887712698949943*^9, 
+   3.887804087945446*^9, {3.887804174423739*^9, 3.88780417845825*^9}, {
+   3.887804526304632*^9, 3.88780453280764*^9}, 3.887805834301838*^9, 
+   3.887806198752334*^9, 3.887810827130437*^9, 3.887819105438544*^9, 
+   3.887821661579207*^9, 3.887826123246841*^9, 3.887882959498449*^9, {
+   3.887883391533184*^9, 3.8878834024280443`*^9}, 3.887884408051612*^9, 
+   3.8878845052698917`*^9, 3.887884576952014*^9, 3.887886548053834*^9, 
+   3.887969617903197*^9, 3.887970663677753*^9, 3.910370371533241*^9, 
+   3.910461746268957*^9, 3.910529773479596*^9, 3.910530224921362*^9, 
+   3.9106141284996977`*^9, 3.910694732376695*^9, {3.910698397160885*^9, 
+   3.910698408981117*^9}, 3.9107000017052517`*^9, 3.910702912580274*^9, 
+   3.910706214221219*^9, 3.91070642600079*^9, 3.91070700272331*^9, 
+   3.91399021766814*^9, 3.937575037131925*^9, 3.938507071534621*^9, 
+   3.938592027463431*^9, 3.942766348959028*^9, 3.94785172782617*^9, {
+   3.947861412226584*^9, 3.947861451505005*^9}, 3.94792843364513*^9, 
+   3.947928772133676*^9, {3.947929154299284*^9, 3.947929172001218*^9}, 
+   3.947930708529414*^9, 3.947931553943761*^9, 3.947932820580566*^9, 
+   3.947933389243732*^9, 3.9479354224887047`*^9, 3.947949048599859*^9, 
+   3.948194134373625*^9, 3.952765055048567*^9, 3.952876150861906*^9, 
+   3.952877287840365*^9, 3.952958526679426*^9, 3.952958565715145*^9, 
+   3.953021078212138*^9, 3.95302198808291*^9, 3.9531183966536922`*^9, 
+   3.953123743421109*^9, 3.953195438079711*^9},
+ CellLabel->"Out[76]=",ExpressionUUID->"e0556ad5-59e3-4063-852f-7d48cadae21b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "@", "faceLattice"}]], "Input",
+ CellChangeTimes->{{3.9478580879392548`*^9, 3.9478580919498367`*^9}},
+ CellLabel->"In[77]:=",ExpressionUUID->"7bd00a0e-2504-4b0e-986d-6badce0b5860"],
+
+Cell[BoxData["5"], "Output",
+ CellChangeTimes->{3.947858092082993*^9, 3.9478614533256483`*^9, 
+  3.947928434332464*^9, 3.947929175094938*^9, 3.947930709039216*^9, 
+  3.947931553947266*^9, 3.947932821092123*^9, 3.947933389829607*^9, 
+  3.9479354229035673`*^9, 3.947949049141182*^9, 3.948194135876932*^9, 
+  3.952765055060132*^9, 3.952876150874232*^9, 3.952877288509964*^9, 
+  3.952958526681855*^9, 3.952958565721651*^9, 3.953021078223885*^9, 
+  3.953021988110958*^9, 3.953118396656682*^9, 3.953123743428602*^9, 
+  3.953195438124419*^9},
+ CellLabel->"Out[77]=",ExpressionUUID->"5f8e6c39-9462-4af9-b3fe-64c45ec3105f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DihedralPairing", "@", "faceLattice"}], "\[IndentingNewLine]", 
+ RowBox[{"Length", "@", "%"}]}], "Input",
+ CellChangeTimes->{{3.886851875944907*^9, 3.8868518871586113`*^9}, {
+   3.886851917963681*^9, 3.8868519187390957`*^9}, {3.886851966076653*^9, 
+   3.886851968354197*^9}, {3.8868536021671267`*^9, 3.886853615890654*^9}, 
+   3.9478517332672586`*^9, {3.947853098330612*^9, 3.947853099619117*^9}},
+ CellLabel->"In[78]:=",ExpressionUUID->"8cb61876-fdf5-433a-8445-4ba079217d1b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl1", ",", "vl2", ",", "vl3"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1", ",", "vu2", ",", "vu3"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vu1", ",", "vu2", ",", "vu3"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1", ",", "vu2", ",", "vu3"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vu1", ",", "vu2", ",", "vu3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl1", ",", "vl2", ",", "vu1", ",", "vu2"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1", ",", "vu2", ",", "vu3"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vu1", ",", "vu2", ",", "vu1p", ",", "vu2p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl1", ",", "vl3", ",", "vu1", ",", "vu3"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1", ",", "vu2", ",", "vu3"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl3", ",", "vu1", ",", "vu3", ",", "vu1p", ",", "vu3p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl2", ",", "vl3", ",", "vu2", ",", "vu3"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1", ",", "vu2", ",", "vu3"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl2", ",", "vl3", ",", "vu2", ",", "vu3", ",", "vu2p", ",", "vu3p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vu1p", ",", "vu2p", ",", "vu3p"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vu1", ",", "vu2", ",", "vu3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl1", ",", "vl2", ",", "vu1p", ",", "vu2p"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vu1", ",", "vu2", ",", "vu1p", ",", "vu2p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl1", ",", "vl3", ",", "vu1p", ",", "vu3p"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl3", ",", "vu1", ",", "vu3", ",", "vu1p", ",", "vu3p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl2", ",", "vl3", ",", "vu2p", ",", "vu3p"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vl3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl2", ",", "vl3", ",", "vu2", ",", "vu3", ",", "vu2p", ",", "vu3p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vu1", ",", "vu1p", ",", "vu2", ",", "vu2p"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vu1", ",", "vu2", ",", "vu3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vu1", ",", "vu2", ",", "vu1p", ",", "vu2p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vu1", ",", "vu1p", ",", "vu3", ",", "vu3p"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vu1", ",", "vu2", ",", "vu3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl3", ",", "vu1", ",", "vu3", ",", "vu1p", ",", "vu3p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vu2", ",", "vu2p", ",", "vu3", ",", "vu3p"}], "}"}], "\[Rule]", 
+    
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vu1", ",", "vu2", ",", "vu3", ",", "vu1p", ",", "vu2p", ",", "vu3p"}],
+        "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl2", ",", "vl3", ",", "vu2", ",", "vu3", ",", "vu2p", ",", "vu3p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl1", ",", "vu1", ",", "vu1p"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vu1", ",", "vu2", ",", "vu1p", ",", "vu2p"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl3", ",", "vu1", ",", "vu3", ",", "vu1p", ",", "vu3p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl2", ",", "vu2", ",", "vu2p"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl2", ",", "vu1", ",", "vu2", ",", "vu1p", ",", "vu2p"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl2", ",", "vl3", ",", "vu2", ",", "vu3", ",", "vu2p", ",", "vu3p"}], 
+       "}"}]}], "}"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"vl3", ",", "vu3", ",", "vu3p"}], "}"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "vl1", ",", "vl3", ",", "vu1", ",", "vu3", ",", "vu1p", ",", "vu3p"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+       "vl2", ",", "vl3", ",", "vu2", ",", "vu3", ",", "vu2p", ",", "vu3p"}], 
+       "}"}]}], "}"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.886851916172061*^9, 3.886851924553736*^9}, {
+   3.886851960684988*^9, 3.886851968637766*^9}, {3.886853594051363*^9, 
+   3.886853616221117*^9}, 3.886855857404851*^9, {3.887711952661936*^9, 
+   3.887711972664418*^9}, 3.887712627450151*^9, 3.887712698981391*^9, 
+   3.887804087974606*^9, {3.887804174434763*^9, 3.88780417847186*^9}, {
+   3.887804526351726*^9, 3.887804532819222*^9}, 3.887805834318365*^9, 
+   3.887806198796844*^9, 3.8878108271732073`*^9, 3.887819105450451*^9, 
+   3.887821661616459*^9, 3.887826123292756*^9, 3.887882959552821*^9, {
+   3.887883391550192*^9, 3.887883402455412*^9}, 3.887884408067512*^9, 
+   3.887884505291867*^9, 3.887884576964778*^9, 3.887886548077031*^9, 
+   3.8879696179166803`*^9, 3.887970663688653*^9, 3.910370371536497*^9, 
+   3.91046174628258*^9, 3.910529773482557*^9, 3.9105302249247437`*^9, 
+   3.910614128502603*^9, 3.910694732380224*^9, {3.910698397164839*^9, 
+   3.910698408984779*^9}, 3.910700001708356*^9, 3.910702912599247*^9, 
+   3.9107062142261667`*^9, 3.9107064260041924`*^9, 3.910707002732887*^9, 
+   3.913990217679385*^9, 3.937575037134667*^9, 3.938507071537805*^9, 
+   3.938592027475708*^9, 3.942766349949615*^9, 3.947851734310156*^9, {
+   3.947853075452923*^9, 3.9478531318784*^9}, 3.9478614550795593`*^9, 
+   3.947928435012661*^9, 3.947929176042085*^9, 3.947930709600418*^9, 
+   3.947931553961522*^9, 3.947932821522975*^9, 3.947933178125414*^9, 
+   3.947933390370779*^9, 3.947935423285246*^9, 3.9479490496030397`*^9, 
+   3.9479501499561*^9, 3.948194136672787*^9, 3.952765055063481*^9, 
+   3.952876150877331*^9, 3.952877289003454*^9, 3.952958526689556*^9, 
+   3.952958565724869*^9, 3.953021078226912*^9, 3.953021988115034*^9, 
+   3.9531183966596003`*^9, 3.953123743437951*^9, 3.953195438127417*^9},
+ CellLabel->"Out[78]=",ExpressionUUID->"86439c0f-eb15-49e8-bedf-e144fdc1939b"],
+
+Cell[BoxData["15"], "Output",
+ CellChangeTimes->{{3.886851916172061*^9, 3.886851924553736*^9}, {
+   3.886851960684988*^9, 3.886851968637766*^9}, {3.886853594051363*^9, 
+   3.886853616221117*^9}, 3.886855857404851*^9, {3.887711952661936*^9, 
+   3.887711972664418*^9}, 3.887712627450151*^9, 3.887712698981391*^9, 
+   3.887804087974606*^9, {3.887804174434763*^9, 3.88780417847186*^9}, {
+   3.887804526351726*^9, 3.887804532819222*^9}, 3.887805834318365*^9, 
+   3.887806198796844*^9, 3.8878108271732073`*^9, 3.887819105450451*^9, 
+   3.887821661616459*^9, 3.887826123292756*^9, 3.887882959552821*^9, {
+   3.887883391550192*^9, 3.887883402455412*^9}, 3.887884408067512*^9, 
+   3.887884505291867*^9, 3.887884576964778*^9, 3.887886548077031*^9, 
+   3.8879696179166803`*^9, 3.887970663688653*^9, 3.910370371536497*^9, 
+   3.91046174628258*^9, 3.910529773482557*^9, 3.9105302249247437`*^9, 
+   3.910614128502603*^9, 3.910694732380224*^9, {3.910698397164839*^9, 
+   3.910698408984779*^9}, 3.910700001708356*^9, 3.910702912599247*^9, 
+   3.9107062142261667`*^9, 3.9107064260041924`*^9, 3.910707002732887*^9, 
+   3.913990217679385*^9, 3.937575037134667*^9, 3.938507071537805*^9, 
+   3.938592027475708*^9, 3.942766349949615*^9, 3.947851734310156*^9, {
+   3.947853075452923*^9, 3.9478531318784*^9}, 3.9478614550795593`*^9, 
+   3.947928435012661*^9, 3.947929176042085*^9, 3.947930709600418*^9, 
+   3.947931553961522*^9, 3.947932821522975*^9, 3.947933178125414*^9, 
+   3.947933390370779*^9, 3.947935423285246*^9, 3.9479490496030397`*^9, 
+   3.9479501499561*^9, 3.948194136672787*^9, 3.952765055063481*^9, 
+   3.952876150877331*^9, 3.952877289003454*^9, 3.952958526689556*^9, 
+   3.952958565724869*^9, 3.953021078226912*^9, 3.953021988115034*^9, 
+   3.9531183966596003`*^9, 3.953123743437951*^9, 3.953195438128275*^9},
+ CellLabel->"Out[79]=",ExpressionUUID->"4cc21bd2-0186-429e-84a5-f4afcd526392"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{"Clear", "@", "\[Theta]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"\[Theta]", "[", 
+   RowBox[{"Vec1_", ",", "Vec2_"}], "]"}], ":=", " ", 
+  RowBox[{
+   RowBox[{"-", "\[ImaginaryI]"}], " ", 
+   RowBox[{"Log", "[", " ", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"P", "[", 
+       RowBox[{"Vec1", ",", "Vec2"}], "]"}], "+", " ", 
+      SqrtBox[
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"P", "[", 
+           RowBox[{"Vec1", ",", "Vec2"}], "]"}], ")"}], "2"], "-", 
+        RowBox[{
+         RowBox[{"P", "[", 
+          RowBox[{"Vec1", ",", "Vec1"}], "]"}], " ", 
+         RowBox[{"P", "[", 
+          RowBox[{"Vec2", ",", "Vec2"}], "]"}], " "}]}]]}], 
+     RowBox[{
+      SqrtBox[
+       RowBox[{"P", "[", 
+        RowBox[{"Vec1", ",", "Vec1"}], "]"}]], 
+      SqrtBox[
+       RowBox[{"P", "[", 
+        RowBox[{"Vec2", ",", "Vec2"}], "]"}]]}]], "]"}]}]}]}], "Input",
+ CellChangeTimes->{{3.947864939515089*^9, 3.94786494003046*^9}, {
+  3.947928442267355*^9, 3.947928450817188*^9}, {3.948194149794556*^9, 
+  3.9481941575340652`*^9}, {3.9528772963983583`*^9, 3.9528772970750647`*^9}},
+ CellLabel->"In[80]:=",ExpressionUUID->"9e293d76-c7a7-4759-8858-ff2c1ed143e5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"N", "@", 
+   RowBox[{"\[Theta]", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        FractionBox["Pi", "3"], "]"}], ",", 
+       RowBox[{"Sin", "[", 
+        FractionBox["Pi", "3"], "]"}]}], "}"}]}], "]"}]}], "/.", 
+  RowBox[{"\[Phi]", "->", 
+   SuperscriptBox["10", 
+    RowBox[{"-", "6"}]]}]}]], "Input",
+ CellChangeTimes->{{3.91046183529705*^9, 3.910461912075264*^9}, {
+  3.947864957416116*^9, 3.9478649650183687`*^9}},
+ CellLabel->"In[82]:=",ExpressionUUID->"328b7615-0d11-4abd-a27c-07888ebcec2b"],
+
+Cell[BoxData["1.0471975511965976`"], "Output",
+ CellChangeTimes->{{3.910461879061002*^9, 3.910461912217705*^9}, {
+   3.910465266246076*^9, 3.910465269093941*^9}, 3.910529773515294*^9, 
+   3.910530224957548*^9, 3.910614128544429*^9, 3.910694732415017*^9, {
+   3.910698397192231*^9, 3.910698409014249*^9}, 3.910700001738823*^9, 
+   3.910702912625986*^9, 3.910706214257952*^9, 3.910706426034883*^9, 
+   3.910707002763031*^9, 3.913990217716021*^9, 3.937575037163525*^9, 
+   3.938507071568495*^9, 3.938592027505427*^9, 3.942766361871775*^9, 
+   3.9478615125854*^9, 3.947864904490909*^9, {3.947864942082346*^9, 
+   3.947864965318411*^9}, 3.947928453007575*^9, 3.947930713921088*^9, 
+   3.947931327583908*^9, 3.947931553968159*^9, 3.947932826189486*^9, 
+   3.947933395062948*^9, 3.947935424857975*^9, 3.947949068173725*^9, 
+   3.947949444752143*^9, 3.947950022579567*^9, 3.948194160076505*^9, 
+   3.9527650550718927`*^9, 3.952876150884495*^9, {3.952877293395083*^9, 
+   3.95287730016015*^9}, 3.952958526699738*^9, 3.952958565735068*^9, 
+   3.953021078231473*^9, 3.9530219881352243`*^9, 3.953118396664343*^9, 
+   3.953123743453602*^9, 3.953195438136799*^9},
+ CellLabel->"Out[82]=",ExpressionUUID->"de473c22-1c42-44b7-a790-4d2271f08c5c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"N", "@", 
+   RowBox[{"\[Theta]", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        FractionBox["Pi", "3"], "]"}], ",", 
+       RowBox[{"Sin", "[", 
+        FractionBox["Pi", "3"], "]"}]}], "}"}]}], "]"}]}], "/.", 
+  RowBox[{"\[Phi]", "->", "0"}]}]], "Input",
+ CellChangeTimes->{{3.953196294970467*^9, 3.953196297075713*^9}},
+ CellLabel->
+  "In[345]:=",ExpressionUUID->"6596f2e4-271e-458d-8e7a-87322504242d"],
+
+Cell[BoxData["1.0471975511965976`"], "Output",
+ CellChangeTimes->{3.9531962974319553`*^9},
+ CellLabel->
+  "Out[345]=",ExpressionUUID->"676186d9-deba-4877-b02a-d571cc05398e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"\[Eta]", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "1", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", "0", ",", "1"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"\[Eta]", "//", "MatrixForm"}]}], "Input",
+ CellChangeTimes->{{3.887363124487956*^9, 3.887363124760599*^9}, {
+   3.88782163684147*^9, 3.887821639725835*^9}, {3.8878245915652*^9, 
+   3.887824591996136*^9}, {3.887824662042094*^9, 3.887824664236314*^9}, {
+   3.910464630695797*^9, 3.9104646528398027`*^9}, {3.910464895675424*^9, 
+   3.910464908836423*^9}, {3.947861532345814*^9, 3.947861533356036*^9}, {
+   3.947864611680562*^9, 3.947864613471675*^9}, {3.947928465374861*^9, 
+   3.947928475116371*^9}, {3.947931159241671*^9, 3.947931160988933*^9}, 
+   3.947949071711268*^9},
+ CellLabel->"In[83]:=",ExpressionUUID->"9ed4a299-fd28-44db-a39d-66db184661ec"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"1", "0", "0", "0"},
+     {"0", "1", "0", "0"},
+     {"0", "0", "1", "0"},
+     {"0", "0", "0", "1"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.947928475321158*^9, 3.947930716273493*^9, 3.947931161376502*^9, 
+   3.947931329417597*^9, 3.947931553971715*^9, 3.947932826837798*^9, 
+   3.947933396007707*^9, 3.947935425477261*^9, {3.947949069084229*^9, 
+   3.947949072451303*^9}, 3.947950023100808*^9, 3.948194161159436*^9, 
+   3.952765055082507*^9, 3.952876150888151*^9, 3.9528773006354713`*^9, 
+   3.952958526703163*^9, 3.952958565737251*^9, 3.953021078234002*^9, 
+   3.953021988138445*^9, 3.9531183966747513`*^9, 3.953123743462492*^9, 
+   3.9531954381439047`*^9},
+ CellLabel->
+  "Out[84]//MatrixForm=",ExpressionUUID->"bff7634e-026b-4d61-86c2-\
+de37e667ae31"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[Theta]", "@@", 
+      RowBox[{"InOutNormal", "[", 
+       RowBox[{"#", ",", "faceLattice", ",", "FEmbedding", ",", "\[Eta]"}], 
+       "]"}]}], "&"}], "/@", 
+    RowBox[{"faceLattice", "[", 
+     RowBox[{"[", 
+      RowBox[{"1", "+", "2"}], "]"}], "]"}]}], "/.", "FEmbedding"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"GBB", "=", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Sqrt", "@", "#"}], "&"}], "/@", 
+     RowBox[{"ASqFromVertices", "@@@", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"faceLattice", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", "+", "2"}], "]"}], "]"}], "/.", "FEmbedding"}], 
+       ")"}]}]}], ")"}], ".", "%"}]}]}], "Input",
+ CellChangeTimes->{{3.887367206487986*^9, 3.887367233523491*^9}, {
+   3.887367265751346*^9, 3.887367337106674*^9}, {3.887367368324235*^9, 
+   3.887367368443841*^9}, {3.887367500294158*^9, 3.887367500452404*^9}, 
+   3.88736753830072*^9, {3.910530814842449*^9, 3.910530814997614*^9}, {
+   3.947861561389933*^9, 3.947861675483254*^9}, {3.94786171113529*^9, 
+   3.94786172138251*^9}, {3.947861819210805*^9, 3.947861850149516*^9}, {
+   3.9478620015898123`*^9, 3.9478620030423517`*^9}, {3.947862210131007*^9, 
+   3.947862216699317*^9}, 3.947862248102293*^9, {3.947863152250499*^9, 
+   3.947863331417259*^9}, {3.94786341006898*^9, 3.947863446721094*^9}, {
+   3.947863483590816*^9, 3.947863571629637*^9}, {3.947863746824597*^9, 
+   3.947863787369047*^9}, {3.947864306041842*^9, 3.947864308712947*^9}, {
+   3.947864600273487*^9, 3.947864604009796*^9}, 3.9478654806171837`*^9, {
+   3.947930727192438*^9, 3.947930732217753*^9}, {3.947930984660472*^9, 
+   3.94793099876157*^9}, {3.947931166173074*^9, 3.94793117539648*^9}, {
+   3.947933492371354*^9, 3.947933501784065*^9}, {3.947934471548445*^9, 
+   3.947934475513494*^9}, {3.947935439041287*^9, 3.947935440512689*^9}, {
+   3.947935660859925*^9, 3.947935663687809*^9}, {3.947935874114894*^9, 
+   3.947935883379147*^9}, {3.947949085680889*^9, 3.947949090524673*^9}, 
+   3.948194195945822*^9, 3.9528773074830303`*^9},
+ CellLabel->"In[85]:=",ExpressionUUID->"f5313a69-76bb-4f59-8e9b-c12e5dfaaf1a"],
+
+Cell[BoxData[
+ TemplateBox[<|"shortenedBoxes" -> TagBox[
+     TemplateBox[{"1"}, "OutputSizeLimit`Skeleton"], Short[#, 8]& ], "line" -> 
+   86, "sessionID" -> 17343543322145468913, "byteCount" -> 535552, "size" -> 
+   8, "stored" -> False, "expr" -> Missing["NotStored"], "wrap" -> 
+   OutputSizeLimit`Defer, "version" -> 1|>,
+  "OutputSizeLimitTemplate"]], "Output",
+ CellChangeTimes->{{3.947863539885089*^9, 3.947863573002493*^9}, 
+   3.947863739378298*^9, {3.947863771429982*^9, 3.947863788632741*^9}, 
+   3.947864310853005*^9, {3.9478645551371*^9, 3.947864566680218*^9}, 
+   3.947864633570297*^9, 3.94786497275482*^9, 3.94786514422567*^9, 
+   3.947865522447164*^9, 3.9478657267374*^9, 3.947928487932748*^9, {
+   3.947930721332507*^9, 3.947930733644923*^9}, 3.947931127154961*^9, 
+   3.947931177672784*^9, 3.947931333534769*^9, 3.947931554945802*^9, 
+   3.947932831925127*^9, 3.947933407959722*^9, {3.947933494183244*^9, 
+   3.947933503039082*^9}, {3.947935431679028*^9, 3.947935441795179*^9}, 
+   3.947935664976959*^9, {3.947935885027066*^9, 3.947935897787969*^9}, {
+   3.947949081843288*^9, 3.947949092136683*^9}, 3.947949527035445*^9, 
+   3.947949776339954*^9, 3.947950680695434*^9, 3.948194167697986*^9, 
+   3.948194213037688*^9, 3.948194261242206*^9, 3.95276505587567*^9, 
+   3.9528761516605797`*^9, {3.952877302985794*^9, 3.952877309119166*^9}, 
+   3.95295852740609*^9, 3.952958566473897*^9, 3.953021079252634*^9, 
+   3.95302198889031*^9, 3.9531183974492397`*^9, 3.9531237442370367`*^9, 
+   3.953195438931315*^9},
+ CellLabel->"Out[86]=",ExpressionUUID->"91c29aac-41ab-416b-9fcb-ab0524a91789"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Iconize", "@", 
+  RowBox[{"Simplify", "@", "GBB"}]}]], "Input",
+ CellChangeTimes->{{3.9385170394942627`*^9, 3.938517048188521*^9}, {
+   3.938517137894396*^9, 3.93851717522666*^9}, {3.938592141280593*^9, 
+   3.938592143175173*^9}, {3.942766430414559*^9, 3.942766453408142*^9}, 
+   3.9428352401811657`*^9, {3.947863801912543*^9, 3.947863807999386*^9}, {
+   3.947863997083281*^9, 3.947864004252214*^9}, 3.947931189605242*^9, {
+   3.947933410707327*^9, 3.94793349743058*^9}, {3.947935677929083*^9, 
+   3.947935707894442*^9}, {3.94794910078905*^9, 3.947949101893368*^9}, 
+   3.947949187140047*^9, {3.948194438336206*^9, 3.948194441050196*^9}, {
+   3.952877332494106*^9, 3.95287733343918*^9}},
+ CellLabel->"In[87]:=",ExpressionUUID->"4402ae93-5be3-4b0b-966c-d94a17a5ddf7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  DynamicModuleBox[{Typeset`open = False}, 
+   TemplateBox[{"Expression", 
+     RowBox[{"Times", "[", 
+       DynamicBox[
+        FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
+     GridBox[{{
+        RowBox[{
+          TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+          TagBox["98728", "IconizedItem"]}]}}, 
+      GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+      "Column", 
+      GridBoxItemSize -> {
+       "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+     Dynamic[Typeset`open]},
+    "IconizedObject"]],
+  Complex[0, 
+    Rational[-1, 4]] 
+  3^Rational[1, 2] (($CellContext`sl^4)^Rational[1, 2] 
+    Log[($CellContext`sl^4 ($CellContext`tl^2 - 
+         2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2))^
+       Rational[-1, 2] ($CellContext`sl^4 ($CellContext`tl^2 - 
+         2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2))^
+       Rational[-1, 
+         2] ($CellContext`sl^4 $CellContext`tl^2 - $CellContext`sl^4 \
+$CellContext`tl $CellContext`tu1 - $CellContext`sl^4 $CellContext`tl \
+$CellContext`tu2 + $CellContext`sl^4 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^4 $CellContext`zl^2 - $CellContext`sl^4 $CellContext`zl \
+$CellContext`zu1 - $CellContext`sl^4 $CellContext`zl $CellContext`zu2 + \
+$CellContext`sl^4 $CellContext`zu1 $CellContext`zu2 + (-$CellContext`sl^8 \
+($CellContext`tu1 $CellContext`zl - $CellContext`tu2 $CellContext`zl - \
+$CellContext`tl $CellContext`zu1 + $CellContext`tu2 $CellContext`zu1 + \
+$CellContext`tl $CellContext`zu2 - $CellContext`tu1 $CellContext`zu2)^2)^
+        Rational[1, 2])] + ($CellContext`su1^4)^Rational[1, 2] 
+    Log[($CellContext`su1^4 ($CellContext`tl^2 - 
+         2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2))^
+       Rational[-1, 2] ($CellContext`su1^4 ($CellContext`tu1^2 - 
+         2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2))^
+       Rational[-1, 
+         2] (-$CellContext`su1^4 $CellContext`tl $CellContext`tu1 + \
+$CellContext`su1^4 $CellContext`tu1^2 + $CellContext`su1^4 $CellContext`tl \
+$CellContext`tu2 - $CellContext`su1^4 $CellContext`tu1 $CellContext`tu2 - \
+$CellContext`su1^4 $CellContext`zl $CellContext`zu1 + $CellContext`su1^4 \
+$CellContext`zu1^2 + $CellContext`su1^4 $CellContext`zl $CellContext`zu2 - \
+$CellContext`su1^4 $CellContext`zu1 $CellContext`zu2 + (-$CellContext`su1^8 \
+($CellContext`tu1 $CellContext`zl - $CellContext`tu2 $CellContext`zl - \
+$CellContext`tl $CellContext`zu1 + $CellContext`tu2 $CellContext`zu1 + \
+$CellContext`tl $CellContext`zu2 - $CellContext`tu1 $CellContext`zu2)^2)^
+        Rational[1, 2])] + ($CellContext`su2^4)^Rational[1, 2] 
+    Log[($CellContext`su2^4 ($CellContext`tl^2 - 
+         2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2))^
+       Rational[-1, 2] ($CellContext`su2^4 ($CellContext`tu1^2 - 
+         2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2))^
+       Rational[-1, 
+         2] ($CellContext`su2^4 $CellContext`tl $CellContext`tu1 - \
+$CellContext`su2^4 $CellContext`tl $CellContext`tu2 - $CellContext`su2^4 \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`su2^4 $CellContext`tu2^2 + \
+$CellContext`su2^4 $CellContext`zl $CellContext`zu1 - $CellContext`su2^4 \
+$CellContext`zl $CellContext`zu2 - $CellContext`su2^4 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`su2^4 $CellContext`zu2^2 + \
+(-$CellContext`su2^8 ($CellContext`tu1 $CellContext`zl - $CellContext`tu2 \
+$CellContext`zl - $CellContext`tl $CellContext`zu1 + $CellContext`tu2 \
+$CellContext`zu1 + $CellContext`tl $CellContext`zu2 - $CellContext`tu1 \
+$CellContext`zu2)^2)^Rational[1, 2])] + ($CellContext`sl^4 - 
+      2 $CellContext`sl^3 $CellContext`su1 - 
+      2 $CellContext`sl $CellContext`su1^3 + $CellContext`su1^4 + 
+      2 $CellContext`sl^2 ($CellContext`su1^2 + 
+        6 ($CellContext`tl^2 - 
+          2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2)) + 
+      2 ($CellContext`sl^2 ($CellContext`sl^2 - 
+          2 $CellContext`sl $CellContext`su1 + $CellContext`su1^2 + 
+          12 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2)))^
+        Rational[
+         1, 2] ($CellContext`su1^2 ($CellContext`sl^2 - 
+          2 $CellContext`sl $CellContext`su1 + $CellContext`su1^2 + 
+          12 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2)))^Rational[1, 2] + 
+      12 $CellContext`su1^2 ($CellContext`tl^2 - 
+        2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2))^Rational[1, 2] 
+    Log[($CellContext`sl^4 ($CellContext`tl^2 - 
+         2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2))^
+       Rational[-1, 
+         2] ($CellContext`sl^3 (-$CellContext`su2 ($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) + $CellContext`su1 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2))) + $CellContext`sl^4 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + (-$CellContext`sl^6 ($CellContext`sl^2 - 
+          2 $CellContext`sl $CellContext`su1 + $CellContext`su1^2 + 
+          12 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2)) ($CellContext`tu2 (-$CellContext`zl + \
+$CellContext`zu1) + $CellContext`tu1 ($CellContext`zl - $CellContext`zu2) + \
+$CellContext`tl (-$CellContext`zu1 + $CellContext`zu2))^2)^
+        Rational[
+         1, 2]) ($CellContext`sl^2 ($CellContext`sl^2 $CellContext`tu1^2 - 
+         2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 
+         12 $CellContext`tu1^2 $CellContext`zl^2 - 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+         12 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu1 + 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu1 + 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 - 
+         24 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 
+         12 $CellContext`tl^2 $CellContext`zu1^2 - 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+         12 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+         2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu2 - 
+         24 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu2 + 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 - 2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+         24 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zu1 \
+$CellContext`zu2 + 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 - 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+         12 $CellContext`tl^2 $CellContext`zu2^2 - 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+         12 $CellContext`tu1^2 $CellContext`zu2^2 - 
+         2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2))))^
+       Rational[-1, 2]] + ($CellContext`sl^4 - 
+      2 $CellContext`sl^3 $CellContext`su2 - 
+      2 $CellContext`sl $CellContext`su2^3 + $CellContext`su2^4 + 
+      2 $CellContext`sl^2 ($CellContext`su2^2 + 
+        6 ($CellContext`tl^2 - 
+          2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)) + 
+      2 ($CellContext`sl^2 ($CellContext`sl^2 - 
+          2 $CellContext`sl $CellContext`su2 + $CellContext`su2^2 + 
+          12 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)))^
+        Rational[
+         1, 2] ($CellContext`su2^2 ($CellContext`sl^2 - 
+          2 $CellContext`sl $CellContext`su2 + $CellContext`su2^2 + 
+          12 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)))^Rational[1, 2] + 
+      12 $CellContext`su2^2 ($CellContext`tl^2 - 
+        2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2))^Rational[1, 2] 
+    Log[($CellContext`sl^4 ($CellContext`tl^2 - 
+         2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2))^
+       Rational[-1, 
+         2] (-$CellContext`sl^3 (-$CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`su1 ($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)) + $CellContext`sl^4 ($CellContext`tl \
+($CellContext`tu1 - $CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`tu2^2 + $CellContext`zl $CellContext`zu1 - $CellContext`zl \
+$CellContext`zu2 - $CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2) + \
+(-$CellContext`sl^6 ($CellContext`sl^2 - 
+          2 $CellContext`sl $CellContext`su2 + $CellContext`su2^2 + 
+          12 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)) ($CellContext`tu2 (-$CellContext`zl + \
+$CellContext`zu1) + $CellContext`tu1 ($CellContext`zl - $CellContext`zu2) + \
+$CellContext`tl (-$CellContext`zu1 + $CellContext`zu2))^2)^
+        Rational[
+         1, 2]) ($CellContext`sl^2 ($CellContext`sl^2 $CellContext`tu1^2 - 
+         2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 
+         12 $CellContext`tu1^2 $CellContext`zl^2 - 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+         12 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu1 + 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu1 + 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 - 
+         24 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 
+         12 $CellContext`tl^2 $CellContext`zu1^2 - 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+         12 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+         2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu2 - 
+         24 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu2 + 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 - 2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+         24 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zu1 \
+$CellContext`zu2 + 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 - 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+         12 $CellContext`tl^2 $CellContext`zu2^2 - 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+         12 $CellContext`tu1^2 $CellContext`zu2^2 - 
+         2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2))))^
+       Rational[-1, 2]] + ($CellContext`su1^4 - 
+      2 $CellContext`su1^3 $CellContext`su2 - 
+      2 $CellContext`su1 $CellContext`su2^3 + $CellContext`su2^4 + 
+      2 $CellContext`su1^2 ($CellContext`su2^2 + 
+        6 ($CellContext`tu1^2 - 
+          2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)) + 
+      2 ($CellContext`su1^2 ($CellContext`su1^2 - 
+          2 $CellContext`su1 $CellContext`su2 + $CellContext`su2^2 + 
+          12 ($CellContext`tu1^2 - 
+            2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)))^
+        Rational[
+         1, 2] ($CellContext`su2^2 ($CellContext`su1^2 - 
+          2 $CellContext`su1 $CellContext`su2 + $CellContext`su2^2 + 
+          12 ($CellContext`tu1^2 - 
+            2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)))^Rational[1, 2] + 
+      12 $CellContext`su2^2 ($CellContext`tu1^2 - 
+        2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2))^Rational[1, 2] 
+    Log[($CellContext`su1^4 ($CellContext`tu1^2 - 
+         2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2))^
+       Rational[-1, 
+         2] (-$CellContext`su1^3 ($CellContext`su2 (-$CellContext`tu1^2 + \
+$CellContext`tl ($CellContext`tu1 - $CellContext`tu2) + $CellContext`tu1 \
+$CellContext`tu2 + ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tu1^2 - 
+           2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)) + $CellContext`su1^4 \
+($CellContext`tl ($CellContext`tu1 - $CellContext`tu2) - $CellContext`tu1 \
+$CellContext`tu2 + $CellContext`tu2^2 + $CellContext`zl $CellContext`zu1 - \
+$CellContext`zl $CellContext`zu2 - $CellContext`zu1 $CellContext`zu2 + \
+$CellContext`zu2^2) + (-$CellContext`su1^6 ($CellContext`su1^2 - 
+          2 $CellContext`su1 $CellContext`su2 + $CellContext`su2^2 + 
+          12 ($CellContext`tu1^2 - 
+            2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)) ($CellContext`tu2 (-$CellContext`zl + \
+$CellContext`zu1) + $CellContext`tu1 ($CellContext`zl - $CellContext`zu2) + \
+$CellContext`tl (-$CellContext`zu1 + $CellContext`zu2))^2)^
+        Rational[
+         1, 2]) ($CellContext`su1^2 ($CellContext`sl^2 $CellContext`tu1^2 - 
+         2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 
+         12 $CellContext`tu1^2 $CellContext`zl^2 - 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+         12 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu1 + 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu1 + 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 - 
+         24 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 
+         12 $CellContext`tl^2 $CellContext`zu1^2 - 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+         12 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+         2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu2 - 
+         24 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu2 + 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 - 2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+         24 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zu1 \
+$CellContext`zu2 + 
+         24 $CellContext`tl $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 - 
+         24 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+         12 $CellContext`tl^2 $CellContext`zu2^2 - 
+         24 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+         12 $CellContext`tu1^2 $CellContext`zu2^2 - 
+         2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2))))^Rational[-1, 2]] + 
+   2 ($CellContext`sl^2 $CellContext`tu1^2 - 
+      2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 3 $CellContext`tu1^2 $CellContext`zl^2 - 
+      6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+      3 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+        2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+      6 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu1 + 
+      6 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu1 + 
+      6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl $CellContext`zu1 - 
+      6 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 3 $CellContext`tl^2 $CellContext`zu1^2 - 
+      6 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+      3 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+        2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+      2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+      6 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu2 - 
+      6 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+      6 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu2 + 
+      6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl $CellContext`zu2 - 
+      2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+      6 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+      6 $CellContext`tl $CellContext`tu1 $CellContext`zu1 $CellContext`zu2 + 
+      6 $CellContext`tl $CellContext`tu2 $CellContext`zu1 $CellContext`zu2 - 
+      6 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 $CellContext`zu2 + \
+$CellContext`sl^2 $CellContext`zu2^2 + 3 $CellContext`tl^2 $CellContext`zu2^2 - 
+      6 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+      3 $CellContext`tu1^2 $CellContext`zu2^2 - 
+      2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2)))^Rational[1, 2] 
+    Log[$CellContext`sl^(-2) ($CellContext`sl^2 $CellContext`tu1^2 - 
+        2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 
+        12 $CellContext`tu1^2 $CellContext`zl^2 - 
+        24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+        12 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+          2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+        24 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu1 + 
+        24 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu1 + 
+        24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl $CellContext`zu1 - 
+        24 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 
+        12 $CellContext`tl^2 $CellContext`zu1^2 - 
+        24 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+        12 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+          2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+        2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+        24 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu2 - 
+        24 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+        24 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu2 + 
+        24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl $CellContext`zu2 - 
+        2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+        24 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+        24 $CellContext`tl $CellContext`tu1 $CellContext`zu1 $CellContext`zu2 + 
+        24 $CellContext`tl $CellContext`tu2 $CellContext`zu1 $CellContext`zu2 - 
+        24 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+        12 $CellContext`tl^2 $CellContext`zu2^2 - 
+        24 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+        12 $CellContext`tu1^2 $CellContext`zu2^2 - 
+        2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2)))^(-1) \
+(-$CellContext`sl^4 ($CellContext`tu1^2 - 
+         2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2) + 
+       2 $CellContext`sl^3 ($CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + $CellContext`su1 ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2)) - $CellContext`sl^2 \
+($CellContext`su2^2 ($CellContext`tl^2 - 
+          2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+        2 $CellContext`su1 $CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`su1^2 ($CellContext`tl^2 - 
+          2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+        6 ($CellContext`tu2 (-$CellContext`zl + $CellContext`zu1) + \
+$CellContext`tu1 ($CellContext`zl - $CellContext`zu2) + $CellContext`tl \
+(-$CellContext`zu1 + $CellContext`zu2))^2) + 
+       6 (-$CellContext`sl^4 ($CellContext`tu2 (-$CellContext`zl + \
+$CellContext`zu1) + $CellContext`tu1 ($CellContext`zl - $CellContext`zu2) + \
+$CellContext`tl (-$CellContext`zu1 + $CellContext`zu2))^2 ($CellContext`sl^2 \
+$CellContext`tu1^2 - 
+           2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 3 $CellContext`tu1^2 $CellContext`zl^2 - 
+           6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+           3 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+             2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+           6 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu1 + 
+           6 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 + 
+           6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 - 
+           6 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 3 $CellContext`tl^2 $CellContext`zu1^2 - 
+           6 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+           3 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+             2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+           2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+           6 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu2 - 6 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+           6 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 + 
+           6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 - 2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+           6 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+           6 $CellContext`tl $CellContext`tu1 $CellContext`zu1 \
+$CellContext`zu2 + 
+           6 $CellContext`tl $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 - 
+           6 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+           3 $CellContext`tl^2 $CellContext`zu2^2 - 
+           6 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+           3 $CellContext`tu1^2 $CellContext`zu2^2 - 
+           2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2))))^Rational[1, 2])]),
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.952877345340508*^9, 3.952958527428008*^9, 
+  3.952958577450468*^9, 3.953021091100943*^9, 3.953022044056221*^9, 
+  3.953118406762434*^9, 3.953123753163499*^9, 3.9531954476335497`*^9},
+ CellLabel->"Out[87]=",ExpressionUUID->"df1fc044-7807-4b5a-a7ee-7e622627d6eb"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"WGBBlock", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"tl_", ",", "sl_", ",", "zl_"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"tu1_", ",", "su1_", ",", "zu1_"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"tu2_", ",", "su2_", ",", "zu2_"}], "}"}]}], "]"}], ":=", 
+  "\[IndentingNewLine]", 
+  RowBox[{"+", 
+   RowBox[{"(", "\[IndentingNewLine]", 
+    InterpretationBox[
+     DynamicModuleBox[{Typeset`open = False}, 
+      TemplateBox[{"Expression", 
+        RowBox[{"Times", "[", 
+          DynamicBox[
+           FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
+        GridBox[{{
+           RowBox[{
+             TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+             TagBox["98608", "IconizedItem"]}]}}, 
+         GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+         "Column", 
+         GridBoxItemSize -> {
+          "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+        Dynamic[Typeset`open]},
+       "IconizedObject"]],
+     Complex[0, 
+       Rational[-1, 4]] 
+     3^Rational[1, 2] (($CellContext`sl^4)^Rational[1, 2] 
+       Log[($CellContext`sl^4 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2))^
+          Rational[-1, 2] ($CellContext`sl^4 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2))^
+          Rational[-1, 
+            2] ($CellContext`sl^4 $CellContext`tl^2 - $CellContext`sl^4 \
+$CellContext`tl $CellContext`tu1 - $CellContext`sl^4 $CellContext`tl \
+$CellContext`tu2 + $CellContext`sl^4 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^4 $CellContext`zl^2 - $CellContext`sl^4 $CellContext`zl \
+$CellContext`zu1 - $CellContext`sl^4 $CellContext`zl $CellContext`zu2 + \
+$CellContext`sl^4 $CellContext`zu1 $CellContext`zu2 + ((-$CellContext`sl^8) \
+($CellContext`tu1 $CellContext`zl - $CellContext`tu2 $CellContext`zl - \
+$CellContext`tl $CellContext`zu1 + $CellContext`tu2 $CellContext`zu1 + \
+$CellContext`tl $CellContext`zu2 - $CellContext`tu1 $CellContext`zu2)^2)^
+           Rational[1, 2])] + ($CellContext`su1^4)^Rational[1, 2] 
+       Log[($CellContext`su1^4 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2))^
+          Rational[-1, 2] ($CellContext`su1^4 ($CellContext`tu1^2 - 
+            2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2))^
+          Rational[-1, 
+            2] ((-$CellContext`su1^4) $CellContext`tl $CellContext`tu1 + \
+$CellContext`su1^4 $CellContext`tu1^2 + $CellContext`su1^4 $CellContext`tl \
+$CellContext`tu2 - $CellContext`su1^4 $CellContext`tu1 $CellContext`tu2 - \
+$CellContext`su1^4 $CellContext`zl $CellContext`zu1 + $CellContext`su1^4 \
+$CellContext`zu1^2 + $CellContext`su1^4 $CellContext`zl $CellContext`zu2 - \
+$CellContext`su1^4 $CellContext`zu1 $CellContext`zu2 + ((-$CellContext`su1^8) \
+($CellContext`tu1 $CellContext`zl - $CellContext`tu2 $CellContext`zl - \
+$CellContext`tl $CellContext`zu1 + $CellContext`tu2 $CellContext`zu1 + \
+$CellContext`tl $CellContext`zu2 - $CellContext`tu1 $CellContext`zu2)^2)^
+           Rational[1, 2])] + ($CellContext`su2^4)^Rational[1, 2] 
+       Log[($CellContext`su2^4 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2))^
+          Rational[-1, 2] ($CellContext`su2^4 ($CellContext`tu1^2 - 
+            2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2))^
+          Rational[-1, 
+            2] ($CellContext`su2^4 $CellContext`tl $CellContext`tu1 - \
+$CellContext`su2^4 $CellContext`tl $CellContext`tu2 - $CellContext`su2^4 \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`su2^4 $CellContext`tu2^2 + \
+$CellContext`su2^4 $CellContext`zl $CellContext`zu1 - $CellContext`su2^4 \
+$CellContext`zl $CellContext`zu2 - $CellContext`su2^4 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`su2^4 $CellContext`zu2^2 + \
+((-$CellContext`su2^8) ($CellContext`tu1 $CellContext`zl - $CellContext`tu2 \
+$CellContext`zl - $CellContext`tl $CellContext`zu1 + $CellContext`tu2 \
+$CellContext`zu1 + $CellContext`tl $CellContext`zu2 - $CellContext`tu1 \
+$CellContext`zu2)^2)^Rational[1, 2])] + ($CellContext`sl^4 - 
+         2 $CellContext`sl^3 $CellContext`su1 - 
+         2 $CellContext`sl $CellContext`su1^3 + $CellContext`su1^4 + 
+         2 $CellContext`sl^2 ($CellContext`su1^2 + 
+           6 ($CellContext`tl^2 - 
+             2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2)) + 
+         2 ($CellContext`sl^2 ($CellContext`sl^2 - 
+             2 $CellContext`sl $CellContext`su1 + $CellContext`su1^2 + 
+             12 ($CellContext`tl^2 - 
+               2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2)))^
+           Rational[
+            1, 2] ($CellContext`su1^2 ($CellContext`sl^2 - 
+             2 $CellContext`sl $CellContext`su1 + $CellContext`su1^2 + 
+             12 ($CellContext`tl^2 - 
+               2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2)))^Rational[1, 2] + 
+         12 $CellContext`su1^2 ($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2))^Rational[1, 2] 
+       Log[($CellContext`sl^4 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2))^
+          Rational[-1, 
+            2] ($CellContext`sl^3 ((-$CellContext`su2) ($CellContext`tl^2 - 
+              2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) + $CellContext`su1 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2))) + $CellContext`sl^4 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + ((-$CellContext`sl^6) ($CellContext`sl^2 - 
+             2 $CellContext`sl $CellContext`su1 + $CellContext`su1^2 + 
+             12 ($CellContext`tl^2 - 
+               2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2)) ($CellContext`tu2 (-$CellContext`zl + \
+$CellContext`zu1) + $CellContext`tu1 ($CellContext`zl - $CellContext`zu2) + \
+$CellContext`tl (-$CellContext`zu1 + $CellContext`zu2))^2)^
+           Rational[
+            1, 2]) ($CellContext`sl^2 ($CellContext`sl^2 $CellContext`tu1^2 - 
+            2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 
+            12 $CellContext`tu1^2 $CellContext`zl^2 - 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+            12 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+              2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu1 + 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 + 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 - 
+            24 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 
+            12 $CellContext`tl^2 $CellContext`zu1^2 - 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+            12 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+              2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+            2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu2 - 24 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 + 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 - 2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+            24 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zu1 \
+$CellContext`zu2 + 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 - 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+            12 $CellContext`tl^2 $CellContext`zu2^2 - 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+            12 $CellContext`tu1^2 $CellContext`zu2^2 - 
+            2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2))))^
+          Rational[-1, 2]] + ($CellContext`sl^4 - 
+         2 $CellContext`sl^3 $CellContext`su2 - 
+         2 $CellContext`sl $CellContext`su2^3 + $CellContext`su2^4 + 
+         2 $CellContext`sl^2 ($CellContext`su2^2 + 
+           6 ($CellContext`tl^2 - 
+             2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)) + 
+         2 ($CellContext`sl^2 ($CellContext`sl^2 - 
+             2 $CellContext`sl $CellContext`su2 + $CellContext`su2^2 + 
+             12 ($CellContext`tl^2 - 
+               2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)))^
+           Rational[
+            1, 2] ($CellContext`su2^2 ($CellContext`sl^2 - 
+             2 $CellContext`sl $CellContext`su2 + $CellContext`su2^2 + 
+             12 ($CellContext`tl^2 - 
+               2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)))^Rational[1, 2] + 
+         12 $CellContext`su2^2 ($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2))^Rational[1, 2] 
+       Log[($CellContext`sl^4 ($CellContext`tl^2 - 
+            2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2))^
+          Rational[-1, 
+            2] ((-$CellContext`sl^3) ((-$CellContext`su2) ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`su1 ($CellContext`tl^2 - 
+              2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)) + $CellContext`sl^4 ($CellContext`tl \
+($CellContext`tu1 - $CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`tu2^2 + $CellContext`zl $CellContext`zu1 - $CellContext`zl \
+$CellContext`zu2 - $CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2) + \
+((-$CellContext`sl^6) ($CellContext`sl^2 - 
+             2 $CellContext`sl $CellContext`su2 + $CellContext`su2^2 + 
+             12 ($CellContext`tl^2 - 
+               2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2)) ($CellContext`tu2 (-$CellContext`zl + \
+$CellContext`zu1) + $CellContext`tu1 ($CellContext`zl - $CellContext`zu2) + \
+$CellContext`tl (-$CellContext`zu1 + $CellContext`zu2))^2)^
+           Rational[
+            1, 2]) ($CellContext`sl^2 ($CellContext`sl^2 $CellContext`tu1^2 - 
+            2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 
+            12 $CellContext`tu1^2 $CellContext`zl^2 - 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+            12 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+              2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu1 + 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 + 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 - 
+            24 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 
+            12 $CellContext`tl^2 $CellContext`zu1^2 - 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+            12 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+              2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+            2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu2 - 24 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 + 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 - 2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+            24 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zu1 \
+$CellContext`zu2 + 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 - 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+            12 $CellContext`tl^2 $CellContext`zu2^2 - 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+            12 $CellContext`tu1^2 $CellContext`zu2^2 - 
+            2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2))))^
+          Rational[-1, 2]] + ($CellContext`su1^4 - 
+         2 $CellContext`su1^3 $CellContext`su2 - 
+         2 $CellContext`su1 $CellContext`su2^3 + $CellContext`su2^4 + 
+         2 $CellContext`su1^2 ($CellContext`su2^2 + 
+           6 ($CellContext`tu1^2 - 
+             2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)) + 
+         2 ($CellContext`su1^2 ($CellContext`su1^2 - 
+             2 $CellContext`su1 $CellContext`su2 + $CellContext`su2^2 + 
+             12 ($CellContext`tu1^2 - 
+               2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)))^
+           Rational[
+            1, 2] ($CellContext`su2^2 ($CellContext`su1^2 - 
+             2 $CellContext`su1 $CellContext`su2 + $CellContext`su2^2 + 
+             12 ($CellContext`tu1^2 - 
+               2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)))^Rational[1, 2] + 
+         12 $CellContext`su2^2 ($CellContext`tu1^2 - 
+           2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2))^Rational[1, 2] 
+       Log[($CellContext`su1^4 ($CellContext`tu1^2 - 
+            2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2))^
+          Rational[-1, 
+            2] ((-$CellContext`su1^3) ($CellContext`su2 (-$CellContext`tu1^2 + \
+$CellContext`tl ($CellContext`tu1 - $CellContext`tu2) + $CellContext`tu1 \
+$CellContext`tu2 + ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tu1^2 - 
+              2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)) + $CellContext`su1^4 \
+($CellContext`tl ($CellContext`tu1 - $CellContext`tu2) - $CellContext`tu1 \
+$CellContext`tu2 + $CellContext`tu2^2 + $CellContext`zl $CellContext`zu1 - \
+$CellContext`zl $CellContext`zu2 - $CellContext`zu1 $CellContext`zu2 + \
+$CellContext`zu2^2) + ((-$CellContext`su1^6) ($CellContext`su1^2 - 
+             2 $CellContext`su1 $CellContext`su2 + $CellContext`su2^2 + 
+             12 ($CellContext`tu1^2 - 
+               2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2)) ($CellContext`tu2 (-$CellContext`zl + \
+$CellContext`zu1) + $CellContext`tu1 ($CellContext`zl - $CellContext`zu2) + \
+$CellContext`tl (-$CellContext`zu1 + $CellContext`zu2))^2)^
+           Rational[
+            1, 2]) ($CellContext`su1^2 ($CellContext`sl^2 $CellContext`tu1^2 - 
+            2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 
+            12 $CellContext`tu1^2 $CellContext`zl^2 - 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+            12 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+              2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu1 + 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 + 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 - 
+            24 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 
+            12 $CellContext`tl^2 $CellContext`zu1^2 - 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+            12 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+              2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+            2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu2 - 24 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 + 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 - 2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+            24 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zu1 \
+$CellContext`zu2 + 
+            24 $CellContext`tl $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 - 
+            24 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+            12 $CellContext`tl^2 $CellContext`zu2^2 - 
+            24 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+            12 $CellContext`tu1^2 $CellContext`zu2^2 - 
+            2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2))))^Rational[-1, 2]] + 
+      2 ($CellContext`sl^2 $CellContext`tu1^2 - 
+         2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 3 $CellContext`tu1^2 $CellContext`zl^2 - 
+         6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+         3 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+         6 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu1 + 
+         6 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu1 + 
+         6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl $CellContext`zu1 - 
+         6 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 3 $CellContext`tl^2 $CellContext`zu1^2 - 
+         6 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+         3 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+           2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+         2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+         6 $CellContext`tl $CellContext`tu1 $CellContext`zl $CellContext`zu2 - 
+         6 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+         6 $CellContext`tl $CellContext`tu2 $CellContext`zl $CellContext`zu2 + 
+         6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl $CellContext`zu2 - 
+         2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+         6 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+         6 $CellContext`tl $CellContext`tu1 $CellContext`zu1 $CellContext`zu2 + 
+         6 $CellContext`tl $CellContext`tu2 $CellContext`zu1 $CellContext`zu2 - 
+         6 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+         3 $CellContext`tl^2 $CellContext`zu2^2 - 
+         6 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+         3 $CellContext`tu1^2 $CellContext`zu2^2 - 
+         2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2)))^Rational[1, 2] 
+       Log[$CellContext`sl^(-2) ($CellContext`sl^2 $CellContext`tu1^2 - 
+           2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 
+           12 $CellContext`tu1^2 $CellContext`zl^2 - 
+           24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+           12 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+             2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+           24 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu1 + 
+           24 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 + 
+           24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 - 
+           24 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 
+           12 $CellContext`tl^2 $CellContext`zu1^2 - 
+           24 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+           12 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+             2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+           2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+           24 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu2 - 24 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+           24 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 + 
+           24 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 - 2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+           24 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+           24 $CellContext`tl $CellContext`tu1 $CellContext`zu1 \
+$CellContext`zu2 + 
+           24 $CellContext`tl $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 - 
+           24 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+           12 $CellContext`tl^2 $CellContext`zu2^2 - 
+           24 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+           12 $CellContext`tu1^2 $CellContext`zu2^2 - 
+           2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2)))^(-1) \
+((-$CellContext`sl^4) ($CellContext`tu1^2 - 
+            
+            2 $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zu1 - $CellContext`zu2)^2) - $CellContext`sl^2 \
+($CellContext`su2^2 ($CellContext`tl^2 - 
+             2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+           2 $CellContext`su1 $CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`su1^2 ($CellContext`tl^2 - 
+             2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+           6 ($CellContext`tu1 $CellContext`zl - $CellContext`tu2 \
+$CellContext`zl - $CellContext`tl $CellContext`zu1 + $CellContext`tu2 \
+$CellContext`zu1 + $CellContext`tl $CellContext`zu2 - $CellContext`tu1 \
+$CellContext`zu2)^2) + 
+          2 $CellContext`sl^3 ($CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + $CellContext`su1 ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2)) + 
+          6 ((-$CellContext`sl^4) ($CellContext`tu2 (-$CellContext`zl + \
+$CellContext`zu1) + $CellContext`tu1 ($CellContext`zl - $CellContext`zu2) + \
+$CellContext`tl (-$CellContext`zu1 + $CellContext`zu2))^2 ($CellContext`sl^2 \
+$CellContext`tu1^2 - 
+              2 $CellContext`sl^2 $CellContext`tu1 $CellContext`tu2 + \
+$CellContext`sl^2 $CellContext`tu2^2 + 3 $CellContext`tu1^2 $CellContext`zl^2 - 
+              6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl^2 + 
+              3 $CellContext`tu2^2 $CellContext`zl^2 + $CellContext`su2^2 \
+($CellContext`tl^2 - 
+                2 $CellContext`tl $CellContext`tu1 + $CellContext`tu1^2 + \
+($CellContext`zl - $CellContext`zu1)^2) - 
+              6 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu1 + 
+              6 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 + 
+              6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu1 - 
+              6 $CellContext`tu2^2 $CellContext`zl $CellContext`zu1 + \
+$CellContext`sl^2 $CellContext`zu1^2 + 3 $CellContext`tl^2 $CellContext`zu1^2 - 
+              6 $CellContext`tl $CellContext`tu2 $CellContext`zu1^2 + 
+              3 $CellContext`tu2^2 $CellContext`zu1^2 + $CellContext`su1^2 \
+($CellContext`tl^2 - 
+                2 $CellContext`tl $CellContext`tu2 + $CellContext`tu2^2 + \
+($CellContext`zl - $CellContext`zu2)^2) - 
+              2 $CellContext`sl $CellContext`su2 ($CellContext`tu1^2 - \
+$CellContext`tu1 $CellContext`tu2 + $CellContext`tl (-$CellContext`tu1 + \
+$CellContext`tu2) - ($CellContext`zl - $CellContext`zu1) ($CellContext`zu1 - \
+$CellContext`zu2)) + 
+              6 $CellContext`tl $CellContext`tu1 $CellContext`zl \
+$CellContext`zu2 - 6 $CellContext`tu1^2 $CellContext`zl $CellContext`zu2 - 
+              6 $CellContext`tl $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 + 
+              6 $CellContext`tu1 $CellContext`tu2 $CellContext`zl \
+$CellContext`zu2 - 2 $CellContext`sl^2 $CellContext`zu1 $CellContext`zu2 - 
+              6 $CellContext`tl^2 $CellContext`zu1 $CellContext`zu2 + 
+              6 $CellContext`tl $CellContext`tu1 $CellContext`zu1 \
+$CellContext`zu2 + 
+              6 $CellContext`tl $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 - 
+              6 $CellContext`tu1 $CellContext`tu2 $CellContext`zu1 \
+$CellContext`zu2 + $CellContext`sl^2 $CellContext`zu2^2 + 
+              3 $CellContext`tl^2 $CellContext`zu2^2 - 
+              6 $CellContext`tl $CellContext`tu1 $CellContext`zu2^2 + 
+              3 $CellContext`tu1^2 $CellContext`zu2^2 - 
+              2 $CellContext`su1 ($CellContext`su2 ($CellContext`tl^2 + \
+$CellContext`tu1 $CellContext`tu2 - $CellContext`tl ($CellContext`tu1 + \
+$CellContext`tu2) + ($CellContext`zl - $CellContext`zu1) ($CellContext`zl - \
+$CellContext`zu2)) + $CellContext`sl ($CellContext`tl ($CellContext`tu1 - \
+$CellContext`tu2) - $CellContext`tu1 $CellContext`tu2 + $CellContext`tu2^2 + \
+$CellContext`zl $CellContext`zu1 - $CellContext`zl $CellContext`zu2 - \
+$CellContext`zu1 $CellContext`zu2 + $CellContext`zu2^2))))^Rational[1, 2])]),
+     SelectWithContents->True,
+     Selectable->False], "\[IndentingNewLine]", ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.887715894153288*^9, 3.887715925772958*^9}, {
+   3.887716059229385*^9, 3.887716063447124*^9}, 3.88771805859004*^9, 
+   3.887719433352717*^9, 3.887804165459155*^9, 3.887804229795758*^9, 
+   3.8878045825080442`*^9, 3.8878059491630373`*^9, 3.88780624350084*^9, 
+   3.887810894059617*^9, {3.887819166208848*^9, 3.887819167612111*^9}, 
+   3.887821743123376*^9, 3.887826148967524*^9, 3.887883054384853*^9, {
+   3.887883227250265*^9, 3.887883229716975*^9}, 3.8878844268088923`*^9, 
+   3.887884521889302*^9, 3.887886571290194*^9, {3.887910403980694*^9, 
+   3.887910404147465*^9}, {3.887970617527233*^9, 3.887970627473969*^9}, {
+   3.887971022700411*^9, 3.887971026019304*^9}, 3.908633722194598*^9, 
+   3.9104600849093113`*^9, 3.910462235927968*^9, 3.910462466860052*^9, {
+   3.9104625548952723`*^9, 3.910462556537269*^9}, {3.9104628887581263`*^9, 
+   3.910462888995584*^9}, {3.910464428850795*^9, 3.910464431711817*^9}, 
+   3.910464600604658*^9, 3.910464816061254*^9, 3.910465399451409*^9, {
+   3.910465433970397*^9, 3.910465434116436*^9}, {3.910530066516835*^9, 
+   3.9105300691480494`*^9}, 3.910530453074669*^9, 3.9105320423350782`*^9, 
+   3.910532303137272*^9, 3.9105328852362957`*^9, 3.910533015418839*^9, 
+   3.910611420448702*^9, {3.910611551224731*^9, 3.91061155729748*^9}, 
+   3.9106142451226254`*^9, 3.910694842522447*^9, {3.9106986805416327`*^9, 
+   3.9106986973825*^9}, 3.910699599630546*^9, {3.910706321816852*^9, 
+   3.9107063367103243`*^9}, 3.910706644589436*^9, 3.910707206272639*^9, 
+   3.9107073216394043`*^9, {3.938517464476774*^9, 3.938517467712631*^9}, {
+   3.938592155909604*^9, 3.938592159080399*^9}, {3.942766491711252*^9, 
+   3.9427665090868177`*^9}, {3.94276686829169*^9, 3.942766871646584*^9}, {
+   3.942769362625525*^9, 3.942769363181088*^9}, {3.942835044350559*^9, 
+   3.9428350656998367`*^9}, {3.942835250129203*^9, 3.942835250636005*^9}, {
+   3.94283529295599*^9, 3.942835293654242*^9}, {3.947863862100103*^9, 
+   3.947863941365901*^9}, {3.947864025625029*^9, 3.94786402604248*^9}, {
+   3.9478643210828857`*^9, 3.947864343513442*^9}, {3.947864669113234*^9, 
+   3.947864669595395*^9}, {3.947865002678354*^9, 3.947865003054847*^9}, {
+   3.947865177349484*^9, 3.947865200052106*^9}, {3.947865577558149*^9, 
+   3.947865577894466*^9}, {3.9478657464156446`*^9, 3.947865746756845*^9}, {
+   3.947930859402261*^9, 3.947930860065034*^9}, {3.947931208013458*^9, 
+   3.947931208742254*^9}, {3.947931339551805*^9, 3.947931340023045*^9}, {
+   3.94793284543612*^9, 3.947932846144285*^9}, {3.947933449056836*^9, 
+   3.947933449345934*^9}, {3.947933506334984*^9, 3.9479335066341476`*^9}, {
+   3.947935448513005*^9, 3.947935449076124*^9}, {3.947935682243254*^9, 
+   3.947935711455778*^9}, {3.947935905806449*^9, 3.947935906046926*^9}, {
+   3.947949278664275*^9, 3.947949279328616*^9}, {3.9479493432301903`*^9, 
+   3.947949343900632*^9}, {3.94794991162707*^9, 3.947949913678597*^9}, {
+   3.947951576627534*^9, 3.947951577462289*^9}, {3.948194444727622*^9, 
+   3.948194457690689*^9}, {3.948194608559536*^9, 3.948194609920616*^9}, {
+   3.952877313579131*^9, 3.952877376396867*^9}, {3.9529594542258*^9, 
+   3.952959460593196*^9}, {3.95302206409682*^9, 3.953022064412372*^9}, {
+   3.953034235746655*^9, 3.953034253280775*^9}},
+ CellLabel->"In[88]:=",ExpressionUUID->"9fb85b80-fc03-4840-974b-860ea17a1cbd"]
+}, Open  ]]
+},
+WindowSize->{823, 845},
+WindowMargins->{{Automatic, 338}, {Automatic, 0}},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b3a46ce3-b9b6-407e-8763-e67a1b03ce91"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 161, 3, 98, "Title",ExpressionUUID->"81359818-aa6e-44a7-a4f8-0a6b99543ebd"],
+Cell[CellGroupData[{
+Cell[766, 29, 523, 12, 30, "Input",ExpressionUUID->"23d400d9-889a-49f7-b940-1fb58d6c52b7"],
+Cell[1292, 43, 2045, 31, 34, "Output",ExpressionUUID->"e0556ad5-59e3-4063-852f-7d48cadae21b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3374, 79, 213, 3, 30, "Input",ExpressionUUID->"7bd00a0e-2504-4b0e-986d-6badce0b5860"],
+Cell[3590, 84, 614, 9, 34, "Output",ExpressionUUID->"5f8e6c39-9462-4af9-b3fe-64c45ec3105f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4241, 98, 501, 7, 52, "Input",ExpressionUUID->"8cb61876-fdf5-433a-8445-4ba079217d1b"],
+Cell[4745, 107, 8180, 229, 392, "Output",ExpressionUUID->"86439c0f-eb15-49e8-bedf-e144fdc1939b"],
+Cell[12928, 338, 1880, 26, 34, "Output",ExpressionUUID->"4cc21bd2-0186-429e-84a5-f4afcd526392"]
+}, Open  ]],
+Cell[14823, 367, 1234, 33, 88, "Input",ExpressionUUID->"9e293d76-c7a7-4759-8858-ff2c1ed143e5"],
+Cell[CellGroupData[{
+Cell[16082, 404, 636, 18, 47, "Input",ExpressionUUID->"328b7615-0d11-4abd-a27c-07888ebcec2b"],
+Cell[16721, 424, 1228, 17, 34, "Output",ExpressionUUID->"de473c22-1c42-44b7-a790-4d2271f08c5c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17986, 446, 544, 16, 47, "Input",ExpressionUUID->"6596f2e4-271e-458d-8e7a-87322504242d"],
+Cell[18533, 464, 173, 3, 57, "Output",ExpressionUUID->"676186d9-deba-4877-b02a-d571cc05398e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18743, 472, 1111, 23, 52, "Input",ExpressionUUID->"9ed4a299-fd28-44db-a39d-66db184661ec"],
+Cell[19857, 497, 1195, 29, 97, "Output",ExpressionUUID->"bff7634e-026b-4d61-86c2-de37e667ae31"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21089, 531, 2228, 45, 73, "Input",ExpressionUUID->"f5313a69-76bb-4f59-8e9b-c12e5dfaaf1a"],
+Cell[23320, 578, 1601, 24, 79, "Output",ExpressionUUID->"91c29aac-41ab-416b-9fcb-ab0524a91789"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24958, 607, 790, 12, 30, "Input",ExpressionUUID->"4402ae93-5be3-4b0b-966c-d94a17a5ddf7"],
+Cell[25751, 621, 30031, 499, 40, "Output",ExpressionUUID->"df1fc044-7807-4b5a-a7ee-7e622627d6eb"]
+}, Open  ]],
+Cell[55797, 1123, 34402, 571, 113, "Input",ExpressionUUID->"9fb85b80-fc03-4840-974b-860ea17a1cbd"]
+}, Open  ]]
+}
+]
+*)
+

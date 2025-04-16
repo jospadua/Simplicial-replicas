@@ -1,0 +1,2445 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    107435,       2437]
+NotebookOptionsPosition[    103906,       2372]
+NotebookOutlinePosition[    104303,       2388]
+CellTagsIndexPosition[    104260,       2385]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["State preparation integrals", "Title",
+ CellChangeTimes->{{3.9529648479985*^9, 
+  3.952964853976995*^9}},ExpressionUUID->"806acaaa-0749-45f1-b401-\
+ab733ced0851"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Exp", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "cim0"}], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Phi]im", "-", "\[Phi]0"}], ")"}], "2"]}], "-", 
+     RowBox[{"cimm1", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Phi]im", "-", "\[Phi]m1"}], ")"}], "2"]}], "-", 
+     RowBox[{"cm10", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Phi]m1", "-", "\[Phi]0"}], ")"}], "2"]}], "-", 
+     RowBox[{"cm15", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Phi]m1", "-", "\[Phi]5"}], ")"}], "2"]}], "-", 
+     RowBox[{"cm1i0", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Phi]m1", "-", "\[Phi]i0"}], ")"}], "2"]}], "-", 
+     RowBox[{"ci05", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Phi]i0", "-", "\[Phi]5"}], ")"}], "2"]}], "-", 
+     RowBox[{"c05", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Phi]0", "-", "\[Phi]5"}], ")"}], "2"]}], "-", 
+     RowBox[{"\[CapitalOmega]im", " ", 
+      SuperscriptBox["\[Phi]im", "2"]}], "-", 
+     RowBox[{"\[CapitalOmega]m1", " ", 
+      SuperscriptBox["\[Phi]m1", "2"]}], "-", 
+     RowBox[{"\[CapitalOmega]i0", " ", 
+      SuperscriptBox["\[Phi]i0", "2"]}]}], "\[IndentingNewLine]", "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"\[Phi]im", ",", 
+     RowBox[{"-", "\[Infinity]"}], ",", "\[Infinity]"}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"\[Phi]m1", ",", 
+     RowBox[{"-", "\[Infinity]"}], ",", "\[Infinity]"}], "}"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.952963101029791*^9, 3.952963101169672*^9}, {
+  3.952963153563869*^9, 3.952963164017908*^9}, {3.952963202667469*^9, 
+  3.952963359998125*^9}, {3.9529634008220577`*^9, 3.952963464586371*^9}, {
+  3.952963497289455*^9, 3.952963524982367*^9}, {3.952963572645957*^9, 
+  3.952963575377674*^9}, {3.9529637116702414`*^9, 3.952963712162775*^9}},
+ CellLabel->
+  "In[348]:=",ExpressionUUID->"2adcef16-9270-4979-b38c-fbb0f31240be"],
+
+Cell[BoxData[
+ TemplateBox[{
+   RowBox[{
+     RowBox[{"(", 
+       RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"-", 
+            RowBox[{"(", 
+              RowBox[{
+                RowBox[{"(", 
+                  RowBox[{
+                    RowBox[{"cimm1", " ", "cm10", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]0", "2"]}], "+", 
+                    RowBox[{"cimm1", " ", "cm10", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]0", "2"]}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "cimm1", " ", "cm10", " ", "cm15", " ", 
+                    "\[Phi]0", " ", "\[Phi]5"}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", "cm10", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                    RowBox[{"cimm1", " ", "cm10", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                    RowBox[{"cimm1", " ", "cm15", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "cimm1", " ", "cm10", " ", "cm1i0", " ", 
+                    "\[Phi]0", " ", "\[Phi]i0"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cimm1", " ", "cm10", " ", 
+                    "\[Phi]5", " ", "\[Phi]i0"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cimm1", " ", "cm15", " ", 
+                    "\[Phi]5", " ", "\[Phi]i0"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cimm1", " ", "cm1i0", " ", 
+                    "\[Phi]5", " ", "\[Phi]i0"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "cimm1", " ", "cm15", " ", "cm1i0", " ", 
+                    "\[Phi]5", " ", "\[Phi]i0"}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", "cm10", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{"cimm1", " ", "cm10", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{"cimm1", " ", "cm15", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{"cimm1", " ", "cm10", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]i0"}], "+", 
+                    RowBox[{"cimm1", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]i0"}], "+", 
+                    RowBox[{"cimm1", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]i0"}], "+", 
+                    RowBox[{"cimm1", " ", "cm10", " ", 
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm10", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm10", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "cm10", " ", "cm15", " ", "\[Phi]0", " ", 
+                    "\[Phi]5", " ", "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"ci05", " ", "cm10", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"ci05", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cimm1", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm10", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"ci05", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm15", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]im"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "cm10", " ", "cm1i0", " ", "\[Phi]0", " ", 
+                    "\[Phi]i0", " ", "\[CapitalOmega]im"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cimm1", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0", " ", "\[CapitalOmega]im"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cm10", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0", " ", "\[CapitalOmega]im"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cm15", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0", " ", "\[CapitalOmega]im"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cm1i0", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0", " ", "\[CapitalOmega]im"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "cm15", " ", "cm1i0", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0", " ", "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"ci05", " ", "cm10", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"ci05", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"ci05", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cimm1", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm10", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm15", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cimm1", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0",
+                     " ", "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm10", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0",
+                     " ", "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm15", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0",
+                     " ", "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0",
+                     " ", "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cimm1", " ", "cm10", " ", 
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"cimm1", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]m1"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cimm1", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0", " ", "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"ci05", " ", "cimm1", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"cimm1", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"cimm1", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0",
+                     " ", "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"cm10", " ", 
+                    SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]im", 
+                    " ", "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im", 
+                    " ", "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"cm15", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im", 
+                    " ", "\[CapitalOmega]m1"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "\[Phi]5", " ", "\[Phi]i0", " ", 
+                    "\[CapitalOmega]im", " ", "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im",
+                     " ", "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im",
+                     " ", "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0",
+                     " ", "\[CapitalOmega]im", " ", "\[CapitalOmega]m1"}], 
+                    "+", 
+                    RowBox[{"c05", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"\[Phi]0", "-", "\[Phi]5"}], ")"}], "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"\[CapitalOmega]im", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{"cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                    RowBox[{"cim0", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{"cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", 
+                    "+", "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                    RowBox[{"cimm1", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{"cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]im", "+", "\[CapitalOmega]m1"}], 
+                    ")"}]}]}], ")"}]}], "+", 
+                    RowBox[{"cim0", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"ci05", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                    RowBox[{"ci05", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                    RowBox[{"cm15", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cm15", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "cm1i0", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "cm15", " ", "cm1i0", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0"}], "+", 
+                    RowBox[{"ci05", " ", "cm15", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{"ci05", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{"cm15", " ", "cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{"cm15", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]i0"}], "+", 
+                    RowBox[{"cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]i0"}], "+", 
+                    RowBox[{"cm15", " ", 
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"cm1i0", " ", 
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"cm15", " ", 
+                    SuperscriptBox["\[Phi]5", "2"], " ", 
+                    "\[CapitalOmega]m1"}], "-", 
+                    
+                    RowBox[{
+                    "2", " ", "ci05", " ", "\[Phi]5", " ", "\[Phi]i0", " ", 
+                    "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"cm1i0", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0",
+                     " ", "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]im", 
+                    " ", "\[CapitalOmega]m1"}], "+", 
+                    RowBox[{"cimm1", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cm15", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"\[Phi]0", "-", "\[Phi]5"}], ")"}], "2"]}], "+", 
+                    RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                    RowBox[{"cm1i0", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"\[Phi]0", "-", "\[Phi]i0"}], ")"}], "2"]}], "-", 
+                    
+                    
+                    RowBox[{"2", " ", "ci05", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0"}], "+", 
+                    RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]i0"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+                    RowBox[{"cm10", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cm15", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"\[Phi]0", "-", "\[Phi]5"}], ")"}], "2"]}], "+", 
+                    RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                    RowBox[{"cm1i0", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"\[Phi]0", "-", "\[Phi]i0"}], ")"}], "2"]}], "-", 
+                    
+                    
+                    RowBox[{"2", " ", "ci05", " ", "\[Phi]5", " ", 
+                    "\[Phi]i0"}], "+", 
+                    RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]i0"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                    RowBox[{
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]m1"}]}], ")"}]}]}], ")"}]}]}], ")"}], "/", 
+                RowBox[{"(", 
+                  RowBox[{
+                    RowBox[{"\[CapitalOmega]im", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{
+                    "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                    RowBox[{"cim0", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{
+                    "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                    RowBox[{"cimm1", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{
+                    "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]im", "+", "\[CapitalOmega]m1"}], 
+                    ")"}]}]}], ")"}]}], ")"}]}]], " ", "\[Pi]"}], ")"}], "/", 
+     
+     RowBox[{"(", 
+       RowBox[{
+         SqrtBox[
+          
+          RowBox[{"cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+            "\[CapitalOmega]m1"}]], " ", 
+         RowBox[{"\[Sqrt]", 
+           RowBox[{"(", 
+             RowBox[{
+               RowBox[{"(", 
+                 RowBox[{
+                   RowBox[{"\[CapitalOmega]im", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{
+                    "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                   RowBox[{"cim0", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{
+                    "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                   RowBox[{"cimm1", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{
+                    "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]im", "+", "\[CapitalOmega]m1"}], 
+                    ")"}]}]}], ")"}], "/", 
+               RowBox[{"(", 
+                 
+                 RowBox[{
+                  "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                   "\[CapitalOmega]m1"}], ")"}]}], ")"}]}]}], ")"}]}], 
+   InterpretationBox[
+    DynamicModuleBox[{Typeset`open = False}, 
+     TemplateBox[{"Expression", 
+       StyleBox[
+        TagBox[
+         TooltipBox["\"condition\"", 
+          TagBox[
+           RowBox[{
+             RowBox[{"Re", "[", 
+               FractionBox[
+                RowBox[{
+                  RowBox[{"\[CapitalOmega]im", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{
+                    "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                  RowBox[{"cim0", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{
+                    "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                  RowBox[{"cimm1", " ", 
+                    RowBox[{"(", 
+                    
+                    RowBox[{
+                    "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                    "\[CapitalOmega]im", "+", "\[CapitalOmega]m1"}], 
+                    ")"}]}]}], 
+                
+                RowBox[{
+                 "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                  "\[CapitalOmega]m1"}]], "]"}], "\[GreaterEqual]", "0"}], 
+           Short[#, 7]& ]], Annotation[#, 
+          Short[
+          Re[($CellContext`cimm1 + $CellContext`cm10 + $CellContext`cm15 + \
+$CellContext`cm1i0 + $CellContext`\[CapitalOmega]m1)^(-1) ($CellContext`\
+\[CapitalOmega]im ($CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + \
+$CellContext`\[CapitalOmega]m1) + $CellContext`cim0 ($CellContext`cimm1 + \
+$CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]m1) + $CellContext`cimm1 ($CellContext`cm10 + \
+$CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\[CapitalOmega]im + \
+$CellContext`\[CapitalOmega]m1))] >= 0, 7], "Tooltip"]& ], 
+        "IconizedCustomName", StripOnInput -> False], 
+       GridBox[{{
+          RowBox[{
+            TagBox["\"Head: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            TagBox["GreaterEqual", "IconizedItem"]}]}, {
+          RowBox[{
+            TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+            
+            TagBox["792", "IconizedItem"]}]}}, 
+        GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+        "Column", 
+        GridBoxItemSize -> {
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+       Dynamic[Typeset`open]}, "IconizedObject"]], 
+    Re[($CellContext`cimm1 + $CellContext`cm10 + $CellContext`cm15 + \
+$CellContext`cm1i0 + $CellContext`\[CapitalOmega]m1)^(-1) ($CellContext`\
+\[CapitalOmega]im ($CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + \
+$CellContext`\[CapitalOmega]m1) + $CellContext`cim0 ($CellContext`cimm1 + \
+$CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]m1) + $CellContext`cimm1 ($CellContext`cm10 + \
+$CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\[CapitalOmega]im + \
+$CellContext`\[CapitalOmega]m1))] >= 0, SelectWithContents -> True, 
+    Selectable -> False]},
+  "ConditionalExpression"]], "Output",
+ CellChangeTimes->{3.952963486575259*^9, 3.952963532971999*^9, 
+  3.952963679996632*^9, 3.952963910749964*^9},
+ CellLabel->
+  "Out[348]=",ExpressionUUID->"89cf31e2-f041-452d-9c15-d6ddaba4bd25"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"exponentTerms\[Phi]0Integral", "=", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{"exponent", "=", 
+       RowBox[{"ExpandAll", "[", "\[IndentingNewLine]", 
+        RowBox[{"-", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cimm1", " ", "cm10", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]0", "2"]}], "+", 
+             RowBox[{"cimm1", " ", "cm10", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]0", "2"]}], "-", 
+             RowBox[{
+             "2", " ", "cimm1", " ", "cm10", " ", "cm15", " ", "\[Phi]0", " ",
+               "\[Phi]5"}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", "cm10", " ", 
+              SuperscriptBox["\[Phi]5", "2"]}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]5", "2"]}], "+", 
+             RowBox[{"cimm1", " ", "cm10", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]5", "2"]}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]5", "2"]}], "+", 
+             RowBox[{"cimm1", " ", "cm15", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]5", "2"]}], "-", 
+             RowBox[{
+             "2", " ", "cimm1", " ", "cm10", " ", "cm1i0", " ", "\[Phi]0", 
+              " ", "\[Phi]i0"}], "-", 
+             RowBox[{
+             "2", " ", "ci05", " ", "cimm1", " ", "cm10", " ", "\[Phi]5", " ",
+               "\[Phi]i0"}], "-", 
+             RowBox[{
+             "2", " ", "ci05", " ", "cimm1", " ", "cm15", " ", "\[Phi]5", " ",
+               "\[Phi]i0"}], "-", 
+             RowBox[{
+             "2", " ", "ci05", " ", "cimm1", " ", "cm1i0", " ", "\[Phi]5", 
+              " ", "\[Phi]i0"}], "-", 
+             RowBox[{
+             "2", " ", "cimm1", " ", "cm15", " ", "cm1i0", " ", "\[Phi]5", 
+              " ", "\[Phi]i0"}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", "cm10", " ", 
+              SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+             RowBox[{"cimm1", " ", "cm10", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+             RowBox[{"cimm1", " ", "cm15", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+             RowBox[{"cimm1", " ", "cm10", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0"}], 
+             "+", 
+             RowBox[{"cimm1", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0"}], 
+             "+", 
+             RowBox[{"cimm1", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0"}], 
+             "+", 
+             RowBox[{"cimm1", " ", "cm10", " ", 
+              SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"cm10", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"cm10", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]im"}], "-", 
+             RowBox[{
+             "2", " ", "cm10", " ", "cm15", " ", "\[Phi]0", " ", "\[Phi]5", 
+              " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"ci05", " ", "cm10", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"ci05", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"cimm1", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"cm10", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"ci05", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"cm15", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im"}], "-", 
+             RowBox[{
+             "2", " ", "cm10", " ", "cm1i0", " ", "\[Phi]0", " ", "\[Phi]i0", 
+              " ", "\[CapitalOmega]im"}], "-", 
+             RowBox[{
+             "2", " ", "ci05", " ", "cimm1", " ", "\[Phi]5", " ", "\[Phi]i0", 
+              " ", "\[CapitalOmega]im"}], "-", 
+             RowBox[{
+             "2", " ", "ci05", " ", "cm10", " ", "\[Phi]5", " ", "\[Phi]i0", 
+              " ", "\[CapitalOmega]im"}], "-", 
+             RowBox[{
+             "2", " ", "ci05", " ", "cm15", " ", "\[Phi]5", " ", "\[Phi]i0", 
+              " ", "\[CapitalOmega]im"}], "-", 
+             RowBox[{
+             "2", " ", "ci05", " ", "cm1i0", " ", "\[Phi]5", " ", "\[Phi]i0", 
+              " ", "\[CapitalOmega]im"}], "-", 
+             RowBox[{
+             "2", " ", "cm15", " ", "cm1i0", " ", "\[Phi]5", " ", "\[Phi]i0", 
+              " ", "\[CapitalOmega]im"}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im"}], 
+             "+", 
+             RowBox[{"ci05", " ", "cm10", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im"}], 
+             "+", 
+             RowBox[{"ci05", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im"}], 
+             "+", 
+             RowBox[{"ci05", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im"}], 
+             "+", 
+             RowBox[{"cimm1", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im"}], 
+             "+", 
+             RowBox[{"cm10", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im"}], 
+             "+", 
+             RowBox[{"cm15", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im"}], 
+             "+", 
+             RowBox[{"cimm1", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0", " ", 
+              "\[CapitalOmega]im"}], "+", 
+             RowBox[{"cm10", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0", " ", 
+              "\[CapitalOmega]im"}], "+", 
+             RowBox[{"cm15", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0", " ", 
+              "\[CapitalOmega]im"}], "+", 
+             RowBox[{"cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0", " ", 
+              "\[CapitalOmega]im"}], "+", 
+             RowBox[{"cimm1", " ", "cm10", " ", 
+              SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]m1"}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]m1"}], "+", 
+             RowBox[{"cimm1", " ", "cm15", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]m1"}], "-", 
+             RowBox[{
+             "2", " ", "ci05", " ", "cimm1", " ", "\[Phi]5", " ", "\[Phi]i0", 
+              " ", "\[CapitalOmega]m1"}], "+", 
+             RowBox[{"ci05", " ", "cimm1", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]m1"}], 
+             "+", 
+             RowBox[{"cimm1", " ", "cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]m1"}], 
+             "+", 
+             RowBox[{"cimm1", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0", " ", 
+              "\[CapitalOmega]m1"}], "+", 
+             RowBox[{"cm10", " ", 
+              SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]im", " ", 
+              "\[CapitalOmega]m1"}], "+", 
+             RowBox[{"ci05", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im", " ", 
+              "\[CapitalOmega]m1"}], "+", 
+             RowBox[{"cm15", " ", 
+              SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]im", " ", 
+              "\[CapitalOmega]m1"}], "-", 
+             RowBox[{
+             "2", " ", "ci05", " ", "\[Phi]5", " ", "\[Phi]i0", " ", 
+              "\[CapitalOmega]im", " ", "\[CapitalOmega]m1"}], "+", 
+             RowBox[{"ci05", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im", " ", 
+              "\[CapitalOmega]m1"}], "+", 
+             RowBox[{"cm1i0", " ", 
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]im", " ", 
+              "\[CapitalOmega]m1"}], "+", 
+             RowBox[{
+              SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0", " ", 
+              "\[CapitalOmega]im", " ", "\[CapitalOmega]m1"}], "+", 
+             RowBox[{"c05", " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{"\[Phi]0", "-", "\[Phi]5"}], ")"}], "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"\[CapitalOmega]im", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                  "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                   "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                RowBox[{"cim0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                  "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                   "\[CapitalOmega]m1"}], ")"}]}], "+", 
+                RowBox[{"cimm1", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                  "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im",
+                    "+", "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}], "+", 
+             RowBox[{"cim0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"ci05", " ", "cm15", " ", 
+                 SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                RowBox[{"ci05", " ", "cm1i0", " ", 
+                 SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                RowBox[{"cm15", " ", "cm1i0", " ", 
+                 SuperscriptBox["\[Phi]5", "2"]}], "-", 
+                RowBox[{
+                "2", " ", "ci05", " ", "cm15", " ", "\[Phi]5", " ", 
+                 "\[Phi]i0"}], "-", 
+                RowBox[{
+                "2", " ", "ci05", " ", "cm1i0", " ", "\[Phi]5", " ", 
+                 "\[Phi]i0"}], "-", 
+                RowBox[{
+                "2", " ", "cm15", " ", "cm1i0", " ", "\[Phi]5", " ", 
+                 "\[Phi]i0"}], "+", 
+                RowBox[{"ci05", " ", "cm15", " ", 
+                 SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                RowBox[{"ci05", " ", "cm1i0", " ", 
+                 SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                RowBox[{"cm15", " ", "cm1i0", " ", 
+                 SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                RowBox[{"cm15", " ", 
+                 SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0"}], 
+                "+", 
+                RowBox[{"cm1i0", " ", 
+                 SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0"}], 
+                "+", 
+                RowBox[{"cm15", " ", 
+                 SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]im"}], 
+                "+", 
+                RowBox[{"cm1i0", " ", 
+                 SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]im"}], 
+                "+", 
+                RowBox[{"ci05", " ", 
+                 SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]m1"}], 
+                "+", 
+                RowBox[{"cm15", " ", 
+                 SuperscriptBox["\[Phi]5", "2"], " ", "\[CapitalOmega]m1"}], 
+                "-", 
+                RowBox[{
+                "2", " ", "ci05", " ", "\[Phi]5", " ", "\[Phi]i0", " ", 
+                 "\[CapitalOmega]m1"}], "+", 
+                RowBox[{"ci05", " ", 
+                 SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]m1"}], 
+                "+", 
+                RowBox[{"cm1i0", " ", 
+                 SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]m1"}], 
+                "+", 
+                RowBox[{
+                 SuperscriptBox["\[Phi]i0", "2"], " ", "\[CapitalOmega]i0", 
+                 " ", "\[CapitalOmega]m1"}], "+", 
+                RowBox[{
+                 SuperscriptBox["\[Phi]0", "2"], " ", "\[CapitalOmega]im", 
+                 " ", "\[CapitalOmega]m1"}], "+", 
+                RowBox[{"cimm1", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cm15", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"\[Phi]0", "-", "\[Phi]5"}], ")"}], "2"]}], "+", 
+                   RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                   RowBox[{"cm1i0", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"\[Phi]0", "-", "\[Phi]i0"}], ")"}], "2"]}], "-", 
+                   
+                   RowBox[{
+                   "2", " ", "ci05", " ", "\[Phi]5", " ", "\[Phi]i0"}], "+", 
+                   RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]i0"}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+                RowBox[{"cm10", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cm15", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"\[Phi]0", "-", "\[Phi]5"}], ")"}], "2"]}], "+", 
+                   RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]5", "2"]}], "+", 
+                   RowBox[{"cm1i0", " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{"\[Phi]0", "-", "\[Phi]i0"}], ")"}], "2"]}], "-", 
+                   
+                   RowBox[{
+                   "2", " ", "ci05", " ", "\[Phi]5", " ", "\[Phi]i0"}], "+", 
+                   RowBox[{"ci05", " ", 
+                    SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Phi]i0", "2"], " ", 
+                    "\[CapitalOmega]i0"}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]im"}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[Phi]0", "2"], " ", 
+                    "\[CapitalOmega]m1"}]}], ")"}]}]}], ")"}]}]}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"\[CapitalOmega]im", " ", 
+              RowBox[{"(", 
+               RowBox[{
+               "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], 
+               ")"}]}], "+", 
+             RowBox[{"cim0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+               "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+                "\[CapitalOmega]m1"}], ")"}]}], "+", 
+             RowBox[{"cimm1", " ", 
+              RowBox[{"(", 
+               RowBox[{
+               "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", 
+                "+", "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}], ")"}]}], 
+        "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"exponent", "[", 
+        RowBox[{"[", "i", "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", 
+         RowBox[{"Length", "@", "exponent"}]}], "}"}]}], "]"}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.952964320915415*^9, 3.9529643799507017`*^9}},
+ CellLabel->
+  "In[351]:=",ExpressionUUID->"b290447c-020e-4b0a-bb8c-fe6bad083920"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"forQuadratic\[Phi]i0", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{
+     RowBox[{"Total", "@", 
+      RowBox[{"Select", "[", 
+       RowBox[{"exponentTerms\[Phi]0Integral", ",", 
+        RowBox[{
+         RowBox[{"MemberQ", "[", 
+          RowBox[{"#", ",", 
+           SuperscriptBox["\[Phi]i0", "2"]}], "]"}], "&"}]}], "]"}]}], "/", 
+     SuperscriptBox["\[Phi]i0", "2"]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"forLinear\[Phi]i0", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{
+     RowBox[{"Total", "@", 
+      RowBox[{"Select", "[", 
+       RowBox[{"exponentTerms\[Phi]0Integral", ",", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"MemberQ", "[", 
+           RowBox[{"#", ",", "\[Phi]i0"}], "]"}], "&&", 
+          RowBox[{"(", 
+           RowBox[{"!", 
+            RowBox[{"MemberQ", "[", 
+             RowBox[{"#", ",", 
+              SuperscriptBox["\[Phi]i0", "2"]}], "]"}]}], ")"}]}], "&"}]}], 
+       "]"}]}], "/", "\[Phi]i0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"forNo\[Phi]i0", "=", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{"Total", "@", 
+     RowBox[{"Select", "[", 
+      RowBox[{"exponentTerms\[Phi]0Integral", ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"!", 
+           RowBox[{"MemberQ", "[", 
+            RowBox[{"#", ",", "\[Phi]i0"}], "]"}]}], ")"}], "&&", 
+         RowBox[{"(", 
+          RowBox[{"!", 
+           RowBox[{"MemberQ", "[", 
+            RowBox[{"#", ",", 
+             SuperscriptBox["\[Phi]i0", "2"]}], "]"}]}], ")"}]}], "&"}]}], 
+      "]"}]}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.9529643806434917`*^9, 3.952964477202085*^9}},
+ CellLabel->
+  "In[352]:=",ExpressionUUID->"e85df84d-30c3-4a08-b4a8-c7e23af97b51"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Integrate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"quadratic\[Phi]i0", " ", 
+      SuperscriptBox["\[Phi]i0", "2"]}], "+", 
+     RowBox[{"linear\[Phi]i0", " ", "\[Phi]i0"}], "+", "no\[Phi]i0"}], "]"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"\[Phi]i0", ",", 
+     RowBox[{"-", "\[Infinity]"}], ",", "\[Infinity]"}], "}"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.952964479929895*^9, 3.952964540414178*^9}, {
+  3.9529645716364613`*^9, 3.9529645765102367`*^9}},
+ CellLabel->
+  "In[356]:=",ExpressionUUID->"47b0057c-16a4-47a2-8c5b-dd0eacbfceb7"],
+
+Cell[BoxData[
+ TemplateBox[{
+   FractionBox[
+    RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"no\[Phi]i0", "-", 
+         FractionBox[
+          SuperscriptBox["linear\[Phi]i0", "2"], 
+          RowBox[{"4", " ", "quadratic\[Phi]i0"}]]}]], " ", 
+      SqrtBox["\[Pi]"]}], 
+    SqrtBox[
+     RowBox[{"-", "quadratic\[Phi]i0"}]]], 
+   RowBox[{
+     RowBox[{"Re", "[", "quadratic\[Phi]i0", "]"}], "<", "0"}]},
+  "ConditionalExpression"]], "Output",
+ CellChangeTimes->{3.9529645450685463`*^9, 3.952964581490365*^9},
+ CellLabel->
+  "Out[356]=",ExpressionUUID->"3829fb95-aafb-4daf-b2ec-6c539de4cd06"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"resultingExponentTerms", "=", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{"exponent", "=", 
+       RowBox[{"Expand", "[", 
+        RowBox[{
+         RowBox[{"no\[Phi]i0", "-", 
+          FractionBox[
+           SuperscriptBox["linear\[Phi]i0", "2"], 
+           RowBox[{"4", " ", "quadratic\[Phi]i0"}]]}], "/.", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"quadratic\[Phi]i0", "->", "forQuadratic\[Phi]i0"}], ",", 
+           RowBox[{"linear\[Phi]i0", "->", "forLinear\[Phi]i0"}], ",", 
+           RowBox[{"no\[Phi]i0", "->", "forNo\[Phi]i0"}]}], "}"}]}], "]"}]}], 
+      "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"exponent", "[", 
+        RowBox[{"[", "i", "]"}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", 
+         RowBox[{"Length", "@", "exponent"}]}], "}"}]}], "]"}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.9529649080826483`*^9, 3.952964942767687*^9}},
+ CellLabel->
+  "In[361]:=",ExpressionUUID->"8e607b53-a782-42ed-9008-518b655aaf0a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"forQuadratic\[Phi]0", "=", 
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{
+    RowBox[{"Total", "@", 
+     RowBox[{"Select", "[", 
+      RowBox[{"resultingExponentTerms", ",", 
+       RowBox[{
+        RowBox[{"MemberQ", "[", 
+         RowBox[{"#", ",", 
+          SuperscriptBox["\[Phi]0", "2"]}], "]"}], "&"}]}], "]"}]}], "/", 
+    SuperscriptBox["\[Phi]0", "2"]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"forQuadratic\[Phi]5", "=", 
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{
+    RowBox[{"Total", "@", 
+     RowBox[{"Select", "[", 
+      RowBox[{"resultingExponentTerms", ",", 
+       RowBox[{
+        RowBox[{"MemberQ", "[", 
+         RowBox[{"#", ",", 
+          SuperscriptBox["\[Phi]5", "2"]}], "]"}], "&"}]}], "]"}]}], "/", 
+    SuperscriptBox["\[Phi]5", "2"]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"for\[Phi]0\[Phi]5", "=", 
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{
+    RowBox[{"Total", "@", 
+     RowBox[{"Select", "[", 
+      RowBox[{"resultingExponentTerms", ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"MemberQ", "[", 
+          RowBox[{"#", ",", "\[Phi]0"}], "]"}], "&&", 
+         RowBox[{"MemberQ", "[", 
+          RowBox[{"#", ",", " ", "\[Phi]5"}], "]"}]}], "&"}]}], "]"}]}], "/", 
+    
+    RowBox[{"(", 
+     RowBox[{"\[Phi]0", " ", "\[Phi]5"}], ")"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"forNo\[Phi]0\[Phi]5", "=", 
+  RowBox[{"FullSimplify", "[", 
+   RowBox[{"Total", "@", 
+    RowBox[{"Select", "[", 
+     RowBox[{"resultingExponentTerms", ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"!", 
+          RowBox[{"MemberQ", "[", 
+           RowBox[{"#", ",", 
+            SuperscriptBox["\[Phi]5", "2"]}], "]"}]}], ")"}], "&&", 
+        RowBox[{"(", 
+         RowBox[{"!", 
+          RowBox[{"MemberQ", "[", 
+           RowBox[{"#", ",", " ", 
+            SuperscriptBox["\[Phi]0", "2"]}], "]"}]}], ")"}], "&&", 
+        RowBox[{"(", 
+         RowBox[{"!", 
+          RowBox[{"MemberQ", "[", 
+           RowBox[{"#", ",", "\[Phi]5"}], "]"}]}], ")"}], "&&", 
+        RowBox[{"(", 
+         RowBox[{"!", 
+          RowBox[{"MemberQ", "[", 
+           RowBox[{"#", ",", " ", "\[Phi]0"}], "]"}]}], ")"}]}], "&"}]}], 
+     "]"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.948987700542338*^9, 3.948987713107674*^9}, {
+  3.948987818819398*^9, 3.948987824387599*^9}, {3.948987866314616*^9, 
+  3.948987867835881*^9}, {3.948988052907048*^9, 3.948988065469406*^9}, {
+  3.948988154475836*^9, 3.948988269178472*^9}, {3.948988363190956*^9, 
+  3.948988363276855*^9}, {3.948989379312353*^9, 3.94898938949851*^9}, {
+  3.952964960607017*^9, 3.952965041796412*^9}, {3.9529666838493557`*^9, 
+  3.952966696481907*^9}, {3.952967410842392*^9, 3.9529674212505207`*^9}, {
+  3.952968143035359*^9, 3.95296814318817*^9}},
+ CellLabel->
+  "In[531]:=",ExpressionUUID->"0da08e56-5ab8-40ae-943e-0edc3ee57ffa"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"cim0", " ", "cimm1", " ", "cm15", " ", "cm1i0"}], "+", 
+      RowBox[{"cim0", " ", "cm10", " ", "cm15", " ", "cm1i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm10", " ", "cm15", " ", "cm1i0"}], "+", 
+      RowBox[{"cim0", " ", "cimm1", " ", "cm15", " ", "\[CapitalOmega]i0"}], 
+      "+", 
+      RowBox[{"cim0", " ", "cm10", " ", "cm15", " ", "\[CapitalOmega]i0"}], 
+      "+", 
+      RowBox[{"cimm1", " ", "cm10", " ", "cm15", " ", "\[CapitalOmega]i0"}], 
+      "+", 
+      RowBox[{"cim0", " ", "cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], 
+      "+", 
+      RowBox[{"cim0", " ", "cm10", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], 
+      "+", 
+      RowBox[{"cimm1", " ", "cm10", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], 
+      "+", 
+      RowBox[{"cim0", " ", "cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cim0", " ", "cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cimm1", " ", "cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cim0", " ", "cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cm10", " ", "cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{
+      "cim0", " ", "cimm1", " ", "\[CapitalOmega]i0", " ", 
+       "\[CapitalOmega]im"}], "+", 
+      RowBox[{
+      "cim0", " ", "cm10", " ", "\[CapitalOmega]i0", " ", 
+       "\[CapitalOmega]im"}], "+", 
+      RowBox[{
+      "cimm1", " ", "cm10", " ", "\[CapitalOmega]i0", " ", 
+       "\[CapitalOmega]im"}], "+", 
+      RowBox[{
+      "cim0", " ", "cm15", " ", "\[CapitalOmega]i0", " ", 
+       "\[CapitalOmega]im"}], "+", 
+      RowBox[{
+      "cm10", " ", "cm15", " ", "\[CapitalOmega]i0", " ", 
+       "\[CapitalOmega]im"}], "+", 
+      RowBox[{
+      "cim0", " ", "cm1i0", " ", "\[CapitalOmega]i0", " ", 
+       "\[CapitalOmega]im"}], "+", 
+      RowBox[{
+      "cm10", " ", "cm1i0", " ", "\[CapitalOmega]i0", " ", 
+       "\[CapitalOmega]im"}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cm10", " ", 
+          RowBox[{"(", 
+           RowBox[{"cimm1", "+", "\[CapitalOmega]im"}], ")"}]}], "+", 
+         RowBox[{"cim0", " ", 
+          RowBox[{"(", 
+           RowBox[{"cimm1", "+", "cm10", "+", "\[CapitalOmega]im"}], 
+           ")"}]}]}], ")"}], " ", "\[CapitalOmega]m1"}], "+", 
+      RowBox[{"ci05", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cim0", " ", "\[CapitalOmega]im", " ", 
+          RowBox[{"(", 
+           RowBox[{"cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], ")"}]}], 
+         "+", 
+         RowBox[{"cm10", " ", "\[CapitalOmega]im", " ", 
+          RowBox[{"(", 
+           RowBox[{"cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], ")"}]}], 
+         "+", 
+         RowBox[{"cim0", " ", "cimm1", " ", 
+          RowBox[{"(", 
+           RowBox[{
+           "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", "+", 
+            "\[CapitalOmega]m1"}], ")"}]}], "+", 
+         RowBox[{"cim0", " ", "cm10", " ", 
+          RowBox[{"(", 
+           RowBox[{
+           "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", "+", 
+            "\[CapitalOmega]m1"}], ")"}]}], "+", 
+         RowBox[{"cimm1", " ", "cm10", " ", 
+          RowBox[{"(", 
+           RowBox[{
+           "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", "+", 
+            "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}], "+", 
+      RowBox[{"c05", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cim0", " ", "cimm1", " ", "cm1i0"}], "+", 
+         RowBox[{"cim0", " ", "cm10", " ", "cm1i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm10", " ", "cm1i0"}], "+", 
+         RowBox[{"cim0", " ", "cm15", " ", "cm1i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm15", " ", "cm1i0"}], "+", 
+         RowBox[{"cim0", " ", "cimm1", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cim0", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cim0", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cim0", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{"cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{"cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{
+         "cimm1", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{"cm10", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}],
+          "+", 
+         RowBox[{"cm15", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}],
+          "+", 
+         RowBox[{
+         "cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"cim0", "+", "cimm1", "+", "\[CapitalOmega]im"}], ")"}], 
+          " ", "\[CapitalOmega]m1"}], "+", 
+         RowBox[{"ci05", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"\[CapitalOmega]im", " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], 
+              ")"}]}], "+", 
+            RowBox[{"cim0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+               "\[CapitalOmega]m1"}], ")"}]}], "+", 
+            RowBox[{"cimm1", " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", 
+               "+", "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}]}]}], 
+     ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"cimm1", " ", "cm10", " ", "cm1i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm15", " ", "cm1i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+      RowBox[{"cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+      RowBox[{"cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+      RowBox[{"cimm1", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cm10", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cm15", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"cimm1", "+", "\[CapitalOmega]im"}], ")"}], " ", 
+       "\[CapitalOmega]m1"}], "+", 
+      RowBox[{"cim0", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cm15", " ", "cm1i0"}], "+", 
+         RowBox[{"cm15", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", 
+          RowBox[{"(", 
+           RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+         RowBox[{"cm10", " ", 
+          RowBox[{"(", 
+           RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+          "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+      RowBox[{"ci05", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"\[CapitalOmega]im", " ", 
+          RowBox[{"(", 
+           RowBox[{
+           "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], 
+           ")"}]}], "+", 
+         RowBox[{"cim0", " ", 
+          RowBox[{"(", 
+           RowBox[{
+           "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+            "\[CapitalOmega]m1"}], ")"}]}], "+", 
+         RowBox[{"cimm1", " ", 
+          RowBox[{"(", 
+           RowBox[{
+           "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", "+", 
+            "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+   ")"}]}]], "Output",
+ CellChangeTimes->{
+  3.9489878247740593`*^9, {3.948987868038811*^9, 3.948987898719342*^9}, {
+   3.948988049873762*^9, 3.948988065773046*^9}, 3.948988105736422*^9, {
+   3.948988150410976*^9, 3.94898818023489*^9}, {3.9489882182429137`*^9, 
+   3.9489882694887457`*^9}, 3.948988363596805*^9, 3.9489886612067013`*^9, {
+   3.9489887858576612`*^9, 3.948988810111309*^9}, 3.9489893589644957`*^9, 
+   3.94898939032695*^9, 3.949067344332637*^9, 3.952965043827958*^9, {
+   3.952966691475453*^9, 3.952966697132429*^9}, {3.952967412486177*^9, 
+   3.952967421737136*^9}, 3.952968566404832*^9},
+ CellLabel->
+  "Out[531]=",ExpressionUUID->"7dc83304-1a7f-4294-a7d2-6584f862bdd2"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"cm15", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cimm1", " ", "cm10", " ", "cm1i0"}], "+", 
+         RowBox[{"cim0", " ", 
+          RowBox[{"(", 
+           RowBox[{"cimm1", "+", "cm10"}], ")"}], " ", "cm1i0"}], "+", 
+         RowBox[{"cimm1", " ", 
+          RowBox[{"(", 
+           RowBox[{"cm10", "+", "cm1i0"}], ")"}], " ", "\[CapitalOmega]i0"}], 
+         "+", 
+         RowBox[{"cim0", " ", 
+          RowBox[{"(", 
+           RowBox[{"cimm1", "+", "cm10", "+", "cm1i0"}], ")"}], " ", 
+          "\[CapitalOmega]i0"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"cimm1", "+", "cm10"}], ")"}], " ", "cm1i0", " ", 
+          "\[CapitalOmega]im"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"cimm1", "+", "cm10", "+", "cm1i0"}], ")"}], " ", 
+          "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}]}], ")"}]}], "+", 
+      RowBox[{"cm15", " ", 
+       RowBox[{"(", 
+        RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"cim0", "+", "cimm1", "+", "\[CapitalOmega]im"}], ")"}], " ", 
+       "\[CapitalOmega]m1"}], "+", 
+      RowBox[{"ci05", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cimm1", " ", "cm10"}], "+", 
+            RowBox[{"cim0", " ", 
+             RowBox[{"(", 
+              RowBox[{"cimm1", "+", "cm10"}], ")"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"cm15", "+", "cm1i0"}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cimm1", " ", 
+             RowBox[{"(", 
+              RowBox[{"cm10", "+", "cm15", "+", "cm1i0"}], ")"}]}], "+", 
+            RowBox[{"cim0", " ", 
+             RowBox[{"(", 
+              RowBox[{"cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0"}], 
+              ")"}]}]}], ")"}], " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"cimm1", "+", "cm10"}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{"cm15", "+", "cm1i0"}], ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0"}], 
+              ")"}], " ", "\[CapitalOmega]i0"}]}], ")"}], " ", 
+          "\[CapitalOmega]im"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"cm15", "+", "cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], 
+          " ", 
+          RowBox[{"(", 
+           RowBox[{"cim0", "+", "cimm1", "+", "\[CapitalOmega]im"}], ")"}], 
+          " ", "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+      RowBox[{"c05", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cim0", " ", "cimm1", " ", "cm1i0"}], "+", 
+         RowBox[{"cim0", " ", "cm10", " ", "cm1i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm10", " ", "cm1i0"}], "+", 
+         RowBox[{"cim0", " ", "cm15", " ", "cm1i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm15", " ", "cm1i0"}], "+", 
+         RowBox[{"cim0", " ", "cimm1", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cim0", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cim0", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cim0", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{"cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{"cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{
+         "cimm1", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{"cm10", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}],
+          "+", 
+         RowBox[{"cm15", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}],
+          "+", 
+         RowBox[{
+         "cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"cim0", "+", "cimm1", "+", "\[CapitalOmega]im"}], ")"}], 
+          " ", "\[CapitalOmega]m1"}], "+", 
+         RowBox[{"ci05", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"\[CapitalOmega]im", " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], 
+              ")"}]}], "+", 
+            RowBox[{"cim0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+               "\[CapitalOmega]m1"}], ")"}]}], "+", 
+            RowBox[{"cimm1", " ", 
+             RowBox[{"(", 
+              RowBox[{
+              "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", 
+               "+", "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}]}]}], 
+     ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"cimm1", " ", "cm10", " ", "cm1i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm15", " ", "cm1i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+      RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+      RowBox[{"cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+      RowBox[{"cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+      RowBox[{"cimm1", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cm10", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cm15", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{"cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+      "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"cimm1", "+", "\[CapitalOmega]im"}], ")"}], " ", 
+       "\[CapitalOmega]m1"}], "+", 
+      RowBox[{"cim0", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cm15", " ", "cm1i0"}], "+", 
+         RowBox[{"cm15", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+         RowBox[{"cimm1", " ", 
+          RowBox[{"(", 
+           RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+         RowBox[{"cm10", " ", 
+          RowBox[{"(", 
+           RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+          "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+      RowBox[{"ci05", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"\[CapitalOmega]im", " ", 
+          RowBox[{"(", 
+           RowBox[{
+           "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], 
+           ")"}]}], "+", 
+         RowBox[{"cim0", " ", 
+          RowBox[{"(", 
+           RowBox[{
+           "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+            "\[CapitalOmega]m1"}], ")"}]}], "+", 
+         RowBox[{"cimm1", " ", 
+          RowBox[{"(", 
+           RowBox[{
+           "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", "+", 
+            "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+   ")"}]}]], "Output",
+ CellChangeTimes->{
+  3.9489878247740593`*^9, {3.948987868038811*^9, 3.948987898719342*^9}, {
+   3.948988049873762*^9, 3.948988065773046*^9}, 3.948988105736422*^9, {
+   3.948988150410976*^9, 3.94898818023489*^9}, {3.9489882182429137`*^9, 
+   3.9489882694887457`*^9}, 3.948988363596805*^9, 3.9489886612067013`*^9, {
+   3.9489887858576612`*^9, 3.948988810111309*^9}, 3.9489893589644957`*^9, 
+   3.94898939032695*^9, 3.949067344332637*^9, 3.952965043827958*^9, {
+   3.952966691475453*^9, 3.952966697132429*^9}, {3.952967412486177*^9, 
+   3.952967421737136*^9}, 3.9529685670542717`*^9},
+ CellLabel->
+  "Out[532]=",ExpressionUUID->"01879b76-131e-456a-b6bc-482cbf9e9ddd"],
+
+Cell[BoxData[
+ RowBox[{"2", " ", 
+  RowBox[{"(", 
+   RowBox[{"c05", "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"ci05", " ", 
+          RowBox[{"(", 
+           RowBox[{"cm15", "+", "cm1i0"}], ")"}]}], "+", 
+         RowBox[{"cm15", " ", 
+          RowBox[{"(", 
+           RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cim0", " ", 
+          RowBox[{"(", 
+           RowBox[{"cimm1", "+", "cm10"}], ")"}]}], "+", 
+         RowBox[{"cm10", " ", 
+          RowBox[{"(", 
+           RowBox[{"cimm1", "+", "\[CapitalOmega]im"}], ")"}]}]}], ")"}]}], 
+      ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"cimm1", " ", "cm10", " ", "cm1i0"}], "+", 
+       RowBox[{"cimm1", " ", "cm15", " ", "cm1i0"}], "+", 
+       RowBox[{"cimm1", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{"cimm1", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+       RowBox[{"cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+       RowBox[{"cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+       RowBox[{"cimm1", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+       "+", 
+       RowBox[{"cm10", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+       "+", 
+       RowBox[{"cm15", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+       "+", 
+       RowBox[{"cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+       "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"cimm1", "+", "\[CapitalOmega]im"}], ")"}], " ", 
+        "\[CapitalOmega]m1"}], "+", 
+       RowBox[{"cim0", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"cm15", " ", "cm1i0"}], "+", 
+          RowBox[{"cm15", " ", "\[CapitalOmega]i0"}], "+", 
+          RowBox[{"cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+          RowBox[{"cimm1", " ", 
+           RowBox[{"(", 
+            RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+          RowBox[{"cm10", " ", 
+           RowBox[{"(", 
+            RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+           "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+       RowBox[{"ci05", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[CapitalOmega]im", " ", 
+           RowBox[{"(", 
+            RowBox[{
+            "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], 
+            ")"}]}], "+", 
+          RowBox[{"cim0", " ", 
+           RowBox[{"(", 
+            RowBox[{
+            "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+             "\[CapitalOmega]m1"}], ")"}]}], "+", 
+          RowBox[{"cimm1", " ", 
+           RowBox[{"(", 
+            RowBox[{
+            "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", "+", 
+             "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}]}]}], 
+   ")"}]}]], "Output",
+ CellChangeTimes->{
+  3.9489878247740593`*^9, {3.948987868038811*^9, 3.948987898719342*^9}, {
+   3.948988049873762*^9, 3.948988065773046*^9}, 3.948988105736422*^9, {
+   3.948988150410976*^9, 3.94898818023489*^9}, {3.9489882182429137`*^9, 
+   3.9489882694887457`*^9}, 3.948988363596805*^9, 3.9489886612067013`*^9, {
+   3.9489887858576612`*^9, 3.948988810111309*^9}, 3.9489893589644957`*^9, 
+   3.94898939032695*^9, 3.949067344332637*^9, 3.952965043827958*^9, {
+   3.952966691475453*^9, 3.952966697132429*^9}, {3.952967412486177*^9, 
+   3.952967421737136*^9}, 3.952968567268957*^9},
+ CellLabel->
+  "Out[533]=",ExpressionUUID->"b163bfe0-d7c1-49c6-980c-7ad88bfbfec3"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{
+  3.9489878247740593`*^9, {3.948987868038811*^9, 3.948987898719342*^9}, {
+   3.948988049873762*^9, 3.948988065773046*^9}, 3.948988105736422*^9, {
+   3.948988150410976*^9, 3.94898818023489*^9}, {3.9489882182429137`*^9, 
+   3.9489882694887457`*^9}, 3.948988363596805*^9, 3.9489886612067013`*^9, {
+   3.9489887858576612`*^9, 3.948988810111309*^9}, 3.9489893589644957`*^9, 
+   3.94898939032695*^9, 3.949067344332637*^9, 3.952965043827958*^9, {
+   3.952966691475453*^9, 3.952966697132429*^9}, {3.952967412486177*^9, 
+   3.952967421737136*^9}, 3.9529685672698507`*^9},
+ CellLabel->
+  "Out[534]=",ExpressionUUID->"da03c63e-01a6-4fca-85fc-6a530a6ffaf7"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Modified parameters", "Title",
+ CellChangeTimes->{{3.952967886416987*^9, 
+  3.952967925727813*^9}},ExpressionUUID->"b001e319-24e9-4dc9-9b4f-\
+3a1c7e6325d8"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9529680553028307`*^9, 
+  3.9529680554641447`*^9}},ExpressionUUID->"ff83ed63-b089-4501-98de-\
+bb5f0a814b91"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CoefficientList", "[", 
+  RowBox[{
+   RowBox[{"Expand", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "c05Tilde"}], 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Phi]0", "-", "\[Phi]5"}], ")"}], "2"]}], "-", 
+     RowBox[{"\[CapitalOmega]0", " ", 
+      SuperscriptBox["\[Phi]0", "2"]}], "-", 
+     RowBox[{"\[CapitalOmega]5", " ", 
+      SuperscriptBox["\[Phi]5", "2"]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Phi]0", ",", "\[Phi]5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9529679262812634`*^9, 3.9529679634441347`*^9}, {
+  3.9529680581339293`*^9, 3.95296808180304*^9}, {3.9529681177091637`*^9, 
+  3.9529681219554443`*^9}, {3.952968344389328*^9, 3.952968345976486*^9}},
+ CellLabel->
+  "In[522]:=",ExpressionUUID->"5470ddc7-e872-4f42-8242-e6319470dfc6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", 
+     RowBox[{
+      RowBox[{"-", "c05Tilde"}], "-", "\[CapitalOmega]5"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     RowBox[{"2", " ", "c05Tilde"}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "c05Tilde"}], "-", "\[CapitalOmega]0"}], ",", "0", ",", 
+     "0"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.952968082068965*^9, 3.952968122417495*^9, 
+  3.952968368352879*^9},
+ CellLabel->
+  "Out[522]=",ExpressionUUID->"0281e8e0-0c49-4bf4-8b25-8c3c715a2ac4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CoefficientList", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Quadratic\[Phi]0", " ", 
+     SuperscriptBox["\[Phi]0", "2"]}], "+", 
+    RowBox[{"\[Phi]0\[Phi]5", " ", "\[Phi]0", " ", "\[Phi]5"}], "+", 
+    RowBox[{"Quadratic\[Phi]5", " ", 
+     SuperscriptBox["\[Phi]5", "2"]}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\[Phi]0", ",", "\[Phi]5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.952968086450762*^9, 3.9529680891934032`*^9}, {
+  3.952968126365199*^9, 3.9529681830572844`*^9}, {3.9529685024911003`*^9, 
+  3.95296850434051*^9}},
+ CellLabel->
+  "In[526]:=",ExpressionUUID->"ad6f0481-02dd-4682-87e9-5f5bb8a7aff2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "Quadratic\[Phi]5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "\[Phi]0\[Phi]5", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"Quadratic\[Phi]0", ",", "0", ",", "0"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.952968186092046*^9, 3.952968504812831*^9},
+ CellLabel->
+  "Out[526]=",ExpressionUUID->"dd3e89b4-44dd-4be6-8d2b-5a735d442541"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "@", 
+  RowBox[{"Solve", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", 
+         RowBox[{
+          RowBox[{"-", "c05Tilde"}], "-", "\[CapitalOmega]5"}]}], "}"}], ",", 
+       
+       RowBox[{"{", 
+        RowBox[{"0", ",", 
+         RowBox[{"2", " ", "c05Tilde"}], ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "c05Tilde"}], "-", "\[CapitalOmega]0"}], ",", "0", ",",
+          "0"}], "}"}]}], "}"}], "==", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "Quadratic\[Phi]5"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "\[Phi]0\[Phi]5", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"Quadratic\[Phi]0", ",", "0", ",", "0"}], "}"}]}], "}"}]}], 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"c05Tilde", ",", "\[CapitalOmega]0", ",", "\[CapitalOmega]5"}], 
+     "}"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.952968188968561*^9, 3.952968219168791*^9}, {
+   3.9529683527765903`*^9, 3.952968372981209*^9}, 3.952968509203082*^9},
+ CellLabel->
+  "In[527]:=",ExpressionUUID->"aa665d0e-ab81-4fd0-b1e7-fc4ee70c6cf4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"c05Tilde", "\[Rule]", 
+     FractionBox["\[Phi]0\[Phi]5", "2"]}], ",", 
+    RowBox[{"\[CapitalOmega]0", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "Quadratic\[Phi]0"}], "-", 
+      FractionBox["\[Phi]0\[Phi]5", "2"]}]}], ",", 
+    RowBox[{"\[CapitalOmega]5", "\[Rule]", 
+     RowBox[{
+      RowBox[{"-", "Quadratic\[Phi]5"}], "-", 
+      FractionBox["\[Phi]0\[Phi]5", "2"]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.952968210790277*^9, 3.9529682193720493`*^9}, {
+   3.952968357724063*^9, 3.952968373348895*^9}, 3.952968509550881*^9},
+ CellLabel->
+  "Out[527]=",ExpressionUUID->"f82b37cd-e051-401b-9d39-0db9c7dde282"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "c05Tilde", "*)"}], 
+  RowBox[{
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{
+     FractionBox["\[Phi]0\[Phi]5", "2"], "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Quadratic\[Phi]0", "->", "forQuadratic\[Phi]0"}], ",", 
+       RowBox[{"\[Phi]0\[Phi]5", "->", "for\[Phi]0\[Phi]5"}], ",", 
+       RowBox[{"Quadratic\[Phi]5", "->", "forQuadratic\[Phi]5"}]}], "}"}]}], 
+    "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Iconize", "@", "%"}]}]}]], "Input",
+ CellChangeTimes->{{3.952968417114244*^9, 3.952968526245865*^9}, {
+  3.952968582147216*^9, 3.9529685836468773`*^9}, {3.952969423946533*^9, 
+  3.9529694262622337`*^9}},
+ CellLabel->
+  "In[548]:=",ExpressionUUID->"b8c26fee-991b-49d0-88ac-8d87697be743"],
+
+Cell[BoxData[
+ RowBox[{"c05", "+", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"ci05", " ", 
+        RowBox[{"(", 
+         RowBox[{"cm15", "+", "cm1i0"}], ")"}]}], "+", 
+       RowBox[{"cm15", " ", 
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}]}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"cim0", " ", 
+        RowBox[{"(", 
+         RowBox[{"cimm1", "+", "cm10"}], ")"}]}], "+", 
+       RowBox[{"cm10", " ", 
+        RowBox[{"(", 
+         RowBox[{"cimm1", "+", "\[CapitalOmega]im"}], ")"}]}]}], ")"}]}], 
+    ")"}], "/", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"cimm1", " ", "cm10", " ", "cm1i0"}], "+", 
+     RowBox[{"cimm1", " ", "cm15", " ", "cm1i0"}], "+", 
+     RowBox[{"cimm1", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+     RowBox[{"cimm1", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+     RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+     RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+     RowBox[{"cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+     RowBox[{"cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+     RowBox[{"cimm1", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+     "+", 
+     RowBox[{"cm10", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+     "+", 
+     RowBox[{"cm15", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+     "+", 
+     RowBox[{"cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+     "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"cimm1", "+", "\[CapitalOmega]im"}], ")"}], " ", 
+      "\[CapitalOmega]m1"}], "+", 
+     RowBox[{"cim0", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"cm15", " ", "cm1i0"}], "+", 
+        RowBox[{"cm15", " ", "\[CapitalOmega]i0"}], "+", 
+        RowBox[{"cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+        RowBox[{"cimm1", " ", 
+         RowBox[{"(", 
+          RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+        RowBox[{"cm10", " ", 
+         RowBox[{"(", 
+          RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+         "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+     RowBox[{"ci05", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"\[CapitalOmega]im", " ", 
+         RowBox[{"(", 
+          RowBox[{
+          "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], 
+          ")"}]}], "+", 
+        RowBox[{"cim0", " ", 
+         RowBox[{"(", 
+          RowBox[{
+          "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+           "\[CapitalOmega]m1"}], ")"}]}], "+", 
+        RowBox[{"cimm1", " ", 
+         RowBox[{"(", 
+          RowBox[{
+          "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", "+", 
+           "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}]}]}]], "Output",
+ CellChangeTimes->{{3.952968425027262*^9, 3.9529684349400244`*^9}, 
+   3.952968526805546*^9, 3.9529685841720963`*^9, 3.952969427340631*^9},
+ CellLabel->
+  "Out[548]=",ExpressionUUID->"dd2e2928-5a70-49fc-88d0-bb532cd37ff2"],
+
+Cell[BoxData[
+ InterpretationBox[
+  DynamicModuleBox[{Typeset`open = False}, 
+   TemplateBox[{"Expression", 
+     RowBox[{"Plus", "[", 
+       DynamicBox[
+        FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
+     GridBox[{{
+        RowBox[{
+          TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+          TagBox["3024", "IconizedItem"]}]}}, 
+      GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+      "Column", 
+      GridBoxItemSize -> {
+       "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+     Dynamic[Typeset`open]},
+    "IconizedObject"]],
+  $CellContext`c05 + ($CellContext`ci05 ($CellContext`cm15 + \
+$CellContext`cm1i0) + $CellContext`cm15 ($CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]i0)) ($CellContext`cim0 ($CellContext`cimm1 + \
+$CellContext`cm10) + $CellContext`cm10 ($CellContext`cimm1 + $CellContext`\
+\[CapitalOmega]im))/($CellContext`cimm1 $CellContext`cm10 $CellContext`cm1i0 + \
+$CellContext`cimm1 $CellContext`cm15 $CellContext`cm1i0 + $CellContext`cimm1 \
+$CellContext`cm10 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm15 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cm10 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cm15 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cimm1 \
+$CellContext`\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + \
+$CellContext`cm10 $CellContext`\[CapitalOmega]i0 \
+$CellContext`\[CapitalOmega]im + $CellContext`cm15 $CellContext`\
+\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + $CellContext`cm1i0 \
+$CellContext`\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + \
+($CellContext`cm1i0 + $CellContext`\[CapitalOmega]i0) ($CellContext`cimm1 + \
+$CellContext`\[CapitalOmega]im) $CellContext`\[CapitalOmega]m1 + \
+$CellContext`cim0 ($CellContext`cm15 $CellContext`cm1i0 + $CellContext`cm15 \
+$CellContext`\[CapitalOmega]i0 + $CellContext`cm1i0 $CellContext`\
+\[CapitalOmega]i0 + $CellContext`cimm1 ($CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]i0) + $CellContext`cm10 ($CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]i0) + ($CellContext`cm1i0 + $CellContext`\[CapitalOmega]i0) \
+$CellContext`\[CapitalOmega]m1) + $CellContext`ci05 ($CellContext`\
+\[CapitalOmega]im ($CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + \
+$CellContext`\[CapitalOmega]m1) + $CellContext`cim0 ($CellContext`cimm1 + \
+$CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]m1) + $CellContext`cimm1 ($CellContext`cm10 + \
+$CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\[CapitalOmega]im + \
+$CellContext`\[CapitalOmega]m1))),
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.952968425027262*^9, 3.9529684349400244`*^9}, 
+   3.952968526805546*^9, 3.9529685841720963`*^9, 3.952969427341997*^9},
+ CellLabel->
+  "Out[549]=",ExpressionUUID->"e744625e-a45d-4887-a4ac-11075e8f929d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "\[CapitalOmega]0", "*)"}], 
+  RowBox[{
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "Quadratic\[Phi]0"}], "-", 
+      FractionBox["\[Phi]0\[Phi]5", "2"]}], "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Quadratic\[Phi]0", "->", "forQuadratic\[Phi]0"}], ",", 
+       RowBox[{"\[Phi]0\[Phi]5", "->", "for\[Phi]0\[Phi]5"}], ",", 
+       RowBox[{"Quadratic\[Phi]5", "->", "forQuadratic\[Phi]5"}]}], "}"}]}], 
+    "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Iconize", "@", "%"}]}]}]], "Input",
+ CellChangeTimes->{{3.952968468034338*^9, 3.952968469148555*^9}, {
+  3.952968524279625*^9, 3.952968530550118*^9}, {3.952968578459753*^9, 
+  3.952968580076551*^9}, {3.952969428930274*^9, 3.9529694291522512`*^9}},
+ CellLabel->
+  "In[550]:=",ExpressionUUID->"2838218f-1240-4e13-99a7-2a592a29e5b1"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"cm10", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+       "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"ci05", "+", "cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ",
+         "\[CapitalOmega]im", " ", "\[CapitalOmega]m1"}], "+", 
+       RowBox[{"cimm1", " ", 
+        RowBox[{"(", 
+         RowBox[{"ci05", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"\[CapitalOmega]im", "+", "\[CapitalOmega]m1"}], ")"}]}], 
+       "+", 
+       RowBox[{"cimm1", " ", "cm1i0", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "\[CapitalOmega]i0", "+", "\[CapitalOmega]im", "+", 
+          "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}], "+", 
+    RowBox[{"cim0", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+       "+", 
+       RowBox[{"cm15", " ", 
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+        "\[CapitalOmega]im"}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+        "\[CapitalOmega]im", " ", "\[CapitalOmega]m1"}], "+", 
+       RowBox[{"ci05", " ", "\[CapitalOmega]im", " ", 
+        RowBox[{"(", 
+         RowBox[{"cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], ")"}]}], 
+       "+", 
+       RowBox[{"cimm1", " ", 
+        RowBox[{"(", 
+         RowBox[{"ci05", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"\[CapitalOmega]im", "+", "\[CapitalOmega]m1"}], ")"}]}], 
+       "+", 
+       RowBox[{"cm10", " ", 
+        RowBox[{"(", 
+         RowBox[{"ci05", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"\[CapitalOmega]im", "+", "\[CapitalOmega]m1"}], ")"}]}], 
+       "+", 
+       RowBox[{"cimm1", " ", "cm1i0", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "\[CapitalOmega]i0", "+", "\[CapitalOmega]im", "+", 
+          "\[CapitalOmega]m1"}], ")"}]}], "+", 
+       RowBox[{"cm10", " ", "cm1i0", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "\[CapitalOmega]i0", "+", "\[CapitalOmega]im", "+", 
+          "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}], "/", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"cimm1", " ", "cm10", " ", "cm1i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm15", " ", "cm1i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cimm1", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+    "+", 
+    RowBox[{"cm10", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cm15", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+    "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"cimm1", "+", "\[CapitalOmega]im"}], ")"}], " ", 
+     "\[CapitalOmega]m1"}], "+", 
+    RowBox[{"cim0", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"cm15", " ", "cm1i0"}], "+", 
+       RowBox[{"cm15", " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{"cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{"cimm1", " ", 
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+       RowBox[{"cm10", " ", 
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+        "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+    RowBox[{"ci05", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"\[CapitalOmega]im", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], 
+         ")"}]}], "+", 
+       RowBox[{"cim0", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+          "\[CapitalOmega]m1"}], ")"}]}], "+", 
+       RowBox[{"cimm1", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", "+", 
+          "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.952968530908235*^9, 3.952968580742118*^9, 
+  3.952969429646401*^9},
+ CellLabel->
+  "Out[550]=",ExpressionUUID->"137bec50-2e9c-48fc-bb2e-c88a15c845c6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  DynamicModuleBox[{Typeset`open = False}, 
+   TemplateBox[{"Expression", 
+     RowBox[{"Times", "[", 
+       DynamicBox[
+        FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
+     GridBox[{{
+        RowBox[{
+          TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+          TagBox["4280", "IconizedItem"]}]}}, 
+      GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+      "Column", 
+      GridBoxItemSize -> {
+       "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+     Dynamic[Typeset`open]},
+    "IconizedObject"]],
+  ($CellContext`cimm1 $CellContext`cm10 $CellContext`cm1i0 + \
+$CellContext`cimm1 $CellContext`cm15 $CellContext`cm1i0 + $CellContext`cimm1 \
+$CellContext`cm10 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm15 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cm10 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cm15 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cimm1 \
+$CellContext`\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + \
+$CellContext`cm10 $CellContext`\[CapitalOmega]i0 \
+$CellContext`\[CapitalOmega]im + $CellContext`cm15 $CellContext`\
+\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + $CellContext`cm1i0 \
+$CellContext`\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + \
+($CellContext`cm1i0 + $CellContext`\[CapitalOmega]i0) ($CellContext`cimm1 + \
+$CellContext`\[CapitalOmega]im) $CellContext`\[CapitalOmega]m1 + \
+$CellContext`cim0 ($CellContext`cm15 $CellContext`cm1i0 + $CellContext`cm15 \
+$CellContext`\[CapitalOmega]i0 + $CellContext`cm1i0 $CellContext`\
+\[CapitalOmega]i0 + $CellContext`cimm1 ($CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]i0) + $CellContext`cm10 ($CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]i0) + ($CellContext`cm1i0 + $CellContext`\[CapitalOmega]i0) \
+$CellContext`\[CapitalOmega]m1) + $CellContext`ci05 ($CellContext`\
+\[CapitalOmega]im ($CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + \
+$CellContext`\[CapitalOmega]m1) + $CellContext`cim0 ($CellContext`cimm1 + \
+$CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]m1) + $CellContext`cimm1 ($CellContext`cm10 + \
+$CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\[CapitalOmega]im + \
+$CellContext`\[CapitalOmega]m1)))^(-1) ($CellContext`cm10 ($CellContext`cm1i0 \
+$CellContext`\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + \
+($CellContext`ci05 + $CellContext`cm1i0 + $CellContext`\[CapitalOmega]i0) \
+$CellContext`\[CapitalOmega]im $CellContext`\[CapitalOmega]m1 + \
+$CellContext`cimm1 ($CellContext`ci05 + $CellContext`\[CapitalOmega]i0) \
+($CellContext`\[CapitalOmega]im + $CellContext`\[CapitalOmega]m1) + \
+$CellContext`cimm1 $CellContext`cm1i0 ($CellContext`\[CapitalOmega]i0 + \
+$CellContext`\[CapitalOmega]im + $CellContext`\[CapitalOmega]m1)) + \
+$CellContext`cim0 ($CellContext`cm1i0 $CellContext`\[CapitalOmega]i0 \
+$CellContext`\[CapitalOmega]im + $CellContext`cm15 ($CellContext`cm1i0 + \
+$CellContext`\[CapitalOmega]i0) $CellContext`\[CapitalOmega]im + \
+($CellContext`cm1i0 + $CellContext`\[CapitalOmega]i0) $CellContext`\
+\[CapitalOmega]im $CellContext`\[CapitalOmega]m1 + $CellContext`ci05 \
+$CellContext`\[CapitalOmega]im ($CellContext`cm15 + $CellContext`cm1i0 + \
+$CellContext`\[CapitalOmega]m1) + $CellContext`cimm1 ($CellContext`ci05 + \
+$CellContext`\[CapitalOmega]i0) ($CellContext`\[CapitalOmega]im + \
+$CellContext`\[CapitalOmega]m1) + $CellContext`cm10 ($CellContext`ci05 + \
+$CellContext`\[CapitalOmega]i0) ($CellContext`\[CapitalOmega]im + \
+$CellContext`\[CapitalOmega]m1) + $CellContext`cimm1 $CellContext`cm1i0 \
+($CellContext`\[CapitalOmega]i0 + $CellContext`\[CapitalOmega]im + \
+$CellContext`\[CapitalOmega]m1) + $CellContext`cm10 $CellContext`cm1i0 \
+($CellContext`\[CapitalOmega]i0 + $CellContext`\[CapitalOmega]im + \
+$CellContext`\[CapitalOmega]m1))),
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.952968530908235*^9, 3.952968580742118*^9, 
+  3.952969429647697*^9},
+ CellLabel->
+  "Out[551]=",ExpressionUUID->"2cf0b895-b905-4f89-8738-56d04f6af879"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", "\[CapitalOmega]5", "*)"}], 
+  RowBox[{
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "Quadratic\[Phi]5"}], "-", 
+      FractionBox["\[Phi]0\[Phi]5", "2"]}], "/.", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Quadratic\[Phi]0", "->", "forQuadratic\[Phi]0"}], ",", 
+       RowBox[{"\[Phi]0\[Phi]5", "->", "for\[Phi]0\[Phi]5"}], ",", 
+       RowBox[{"Quadratic\[Phi]5", "->", "forQuadratic\[Phi]5"}]}], "}"}]}], 
+    "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Iconize", "@", "%"}]}]}]], "Input",
+ CellChangeTimes->{{3.95296854075821*^9, 3.952968575496327*^9}, {
+  3.9529694311068497`*^9, 3.9529694313089037`*^9}},
+ CellLabel->
+  "In[552]:=",ExpressionUUID->"ae04ad66-9792-4cb6-8220-30078424c4b8"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"cm15", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"cim0", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+       RowBox[{"cimm1", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+       "+", 
+       RowBox[{"cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+       "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"cim0", "+", "cimm1", "+", "\[CapitalOmega]im"}], ")"}], " ",
+         "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+    RowBox[{"ci05", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"cim0", " ", 
+        RowBox[{"(", 
+         RowBox[{"cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0"}], ")"}], 
+        " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"cm10", "+", "cm15", "+", "cm1i0"}], ")"}], " ", 
+        "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+       RowBox[{"cim0", " ", 
+        RowBox[{"(", 
+         RowBox[{"cm15", "+", "cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ",
+         "\[CapitalOmega]m1"}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"cm15", "+", "cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ",
+         "\[CapitalOmega]im", " ", "\[CapitalOmega]m1"}], "+", 
+       RowBox[{"cimm1", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"cm10", " ", "\[CapitalOmega]i0"}], "+", 
+          RowBox[{"cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+          RowBox[{"cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+          RowBox[{"\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+           "\[CapitalOmega]m1"}], "+", 
+          RowBox[{"cm15", " ", 
+           RowBox[{"(", 
+            RowBox[{
+            "\[CapitalOmega]i0", "+", "\[CapitalOmega]im", "+", 
+             "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+  "/", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"cimm1", " ", "cm10", " ", "cm1i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm15", " ", "cm1i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm10", " ", "\[CapitalOmega]i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm15", " ", "\[CapitalOmega]i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+    RowBox[{"cimm1", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cm10", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cm15", " ", "cm1i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cimm1", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+    "+", 
+    RowBox[{"cm10", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cm15", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], "+", 
+    RowBox[{"cm1i0", " ", "\[CapitalOmega]i0", " ", "\[CapitalOmega]im"}], 
+    "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"cimm1", "+", "\[CapitalOmega]im"}], ")"}], " ", 
+     "\[CapitalOmega]m1"}], "+", 
+    RowBox[{"cim0", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"cm15", " ", "cm1i0"}], "+", 
+       RowBox[{"cm15", " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{"cm1i0", " ", "\[CapitalOmega]i0"}], "+", 
+       RowBox[{"cimm1", " ", 
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+       RowBox[{"cm10", " ", 
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"cm1i0", "+", "\[CapitalOmega]i0"}], ")"}], " ", 
+        "\[CapitalOmega]m1"}]}], ")"}]}], "+", 
+    RowBox[{"ci05", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"\[CapitalOmega]im", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]m1"}], 
+         ")"}]}], "+", 
+       RowBox[{"cim0", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "cimm1", "+", "cm10", "+", "cm15", "+", "cm1i0", "+", 
+          "\[CapitalOmega]m1"}], ")"}]}], "+", 
+       RowBox[{"cimm1", " ", 
+        RowBox[{"(", 
+         RowBox[{
+         "cm10", "+", "cm15", "+", "cm1i0", "+", "\[CapitalOmega]im", "+", 
+          "\[CapitalOmega]m1"}], ")"}]}]}], ")"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.95296854983139*^9, 3.952968576015498*^9}, 
+   3.952969431735854*^9},
+ CellLabel->
+  "Out[552]=",ExpressionUUID->"99d1552f-8df0-4552-baa2-c2a8b2605cc9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  DynamicModuleBox[{Typeset`open = False}, 
+   TemplateBox[{"Expression", 
+     RowBox[{"Times", "[", 
+       DynamicBox[
+        FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
+     GridBox[{{
+        RowBox[{
+          TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+          TagBox["4360", "IconizedItem"]}]}}, 
+      GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+      "Column", 
+      GridBoxItemSize -> {
+       "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+     Dynamic[Typeset`open]},
+    "IconizedObject"]],
+  ($CellContext`cimm1 $CellContext`cm10 $CellContext`cm1i0 + \
+$CellContext`cimm1 $CellContext`cm15 $CellContext`cm1i0 + $CellContext`cimm1 \
+$CellContext`cm10 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm15 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cm10 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cm15 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cimm1 \
+$CellContext`\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + \
+$CellContext`cm10 $CellContext`\[CapitalOmega]i0 \
+$CellContext`\[CapitalOmega]im + $CellContext`cm15 $CellContext`\
+\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + $CellContext`cm1i0 \
+$CellContext`\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + \
+($CellContext`cm1i0 + $CellContext`\[CapitalOmega]i0) ($CellContext`cimm1 + \
+$CellContext`\[CapitalOmega]im) $CellContext`\[CapitalOmega]m1 + \
+$CellContext`cim0 ($CellContext`cm15 $CellContext`cm1i0 + $CellContext`cm15 \
+$CellContext`\[CapitalOmega]i0 + $CellContext`cm1i0 $CellContext`\
+\[CapitalOmega]i0 + $CellContext`cimm1 ($CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]i0) + $CellContext`cm10 ($CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]i0) + ($CellContext`cm1i0 + $CellContext`\[CapitalOmega]i0) \
+$CellContext`\[CapitalOmega]m1) + $CellContext`ci05 ($CellContext`\
+\[CapitalOmega]im ($CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + \
+$CellContext`\[CapitalOmega]m1) + $CellContext`cim0 ($CellContext`cimm1 + \
+$CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]m1) + $CellContext`cimm1 ($CellContext`cm10 + \
+$CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\[CapitalOmega]im + \
+$CellContext`\[CapitalOmega]m1)))^(-1) ($CellContext`cm15 ($CellContext`cim0 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]i0 + $CellContext`cimm1 \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`cimm1 \
+$CellContext`\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]i0 \
+$CellContext`\[CapitalOmega]im + ($CellContext`cm1i0 + $CellContext`\
+\[CapitalOmega]i0) ($CellContext`cim0 + $CellContext`cimm1 + $CellContext`\
+\[CapitalOmega]im) $CellContext`\[CapitalOmega]m1) + $CellContext`ci05 \
+($CellContext`cim0 ($CellContext`cimm1 + $CellContext`cm10 + \
+$CellContext`cm15 + $CellContext`cm1i0) $CellContext`\[CapitalOmega]i0 + \
+($CellContext`cm10 + $CellContext`cm15 + $CellContext`cm1i0) $CellContext`\
+\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + $CellContext`cim0 \
+($CellContext`cm15 + $CellContext`cm1i0 + $CellContext`\[CapitalOmega]i0) \
+$CellContext`\[CapitalOmega]m1 + ($CellContext`cm15 + $CellContext`cm1i0 + \
+$CellContext`\[CapitalOmega]i0) $CellContext`\[CapitalOmega]im $CellContext`\
+\[CapitalOmega]m1 + $CellContext`cimm1 ($CellContext`cm10 $CellContext`\
+\[CapitalOmega]i0 + $CellContext`cm1i0 $CellContext`\[CapitalOmega]i0 + \
+$CellContext`cm1i0 $CellContext`\[CapitalOmega]im + $CellContext`\
+\[CapitalOmega]i0 $CellContext`\[CapitalOmega]im + ($CellContext`cm1i0 + \
+$CellContext`\[CapitalOmega]i0) $CellContext`\[CapitalOmega]m1 + \
+$CellContext`cm15 ($CellContext`\[CapitalOmega]i0 + $CellContext`\
+\[CapitalOmega]im + $CellContext`\[CapitalOmega]m1)))),
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{{3.95296854983139*^9, 3.952968576015498*^9}, 
+   3.952969431737165*^9},
+ CellLabel->
+  "Out[553]=",ExpressionUUID->"ca368f21-bb0d-4222-858a-ebd1efbcd9ca"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{852, 867},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"14.0 for Mac OS X ARM (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"677f1b32-6bc5-4ec1-abed-694d70f50ee4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 168, 3, 98, "Title",ExpressionUUID->"806acaaa-0749-45f1-b401-ab733ced0851"],
+Cell[CellGroupData[{
+Cell[773, 29, 2144, 55, 186, "Input",ExpressionUUID->"2adcef16-9270-4979-b38c-fbb0f31240be"],
+Cell[2920, 86, 22850, 471, 162, "Output",ExpressionUUID->"89cf31e2-f041-452d-9c15-d6ddaba4bd25"]
+}, Open  ]],
+Cell[25785, 560, 16419, 338, 792, "Input",ExpressionUUID->"b290447c-020e-4b0a-bb8c-fe6bad083920"],
+Cell[42207, 900, 1809, 50, 79, "Input",ExpressionUUID->"e85df84d-30c3-4a08-b4a8-c7e23af97b51"],
+Cell[CellGroupData[{
+Cell[44041, 954, 668, 16, 100, "Input",ExpressionUUID->"47b0057c-16a4-47a2-8c5b-dd0eacbfceb7"],
+Cell[44712, 972, 615, 17, 82, "Output",ExpressionUUID->"3829fb95-aafb-4daf-b2ec-6c539de4cd06"]
+}, Open  ]],
+Cell[45342, 992, 1200, 29, 189, "Input",ExpressionUUID->"8e607b53-a782-42ed-9008-518b655aaf0a"],
+Cell[CellGroupData[{
+Cell[46567, 1025, 2885, 74, 100, "Input",ExpressionUUID->"0da08e56-5ab8-40ae-943e-0edc3ee57ffa"],
+Cell[49455, 1101, 9189, 210, 224, "Output",ExpressionUUID->"7dc83304-1a7f-4294-a7d2-6584f862bdd2"],
+Cell[58647, 1313, 8441, 197, 203, "Output",ExpressionUUID->"01879b76-131e-456a-b6bc-482cbf9e9ddd"],
+Cell[67091, 1512, 3921, 93, 98, "Output",ExpressionUUID->"b163bfe0-d7c1-49c6-980c-7ad88bfbfec3"],
+Cell[71015, 1607, 694, 11, 34, "Output",ExpressionUUID->"da03c63e-01a6-4fca-85fc-6a530a6ffaf7"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[71758, 1624, 162, 3, 98, "Title",ExpressionUUID->"b001e319-24e9-4dc9-9b4f-3a1c7e6325d8"],
+Cell[71923, 1629, 156, 3, 30, "Input",ExpressionUUID->"ff83ed63-b089-4501-98de-bb5f0a814b91"],
+Cell[CellGroupData[{
+Cell[72104, 1636, 820, 20, 33, "Input",ExpressionUUID->"5470ddc7-e872-4f42-8242-e6319470dfc6"],
+Cell[72927, 1658, 611, 18, 34, "Output",ExpressionUUID->"0281e8e0-0c49-4bf4-8b25-8c3c715a2ac4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73575, 1681, 644, 15, 33, "Input",ExpressionUUID->"ad6f0481-02dd-4682-87e9-5f5bb8a7aff2"],
+Cell[74222, 1698, 453, 12, 34, "Output",ExpressionUUID->"dd3e89b4-44dd-4be6-8d2b-5a735d442541"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[74712, 1715, 1325, 35, 94, "Input",ExpressionUUID->"aa665d0e-ab81-4fd0-b1e7-fc4ee70c6cf4"],
+Cell[76040, 1752, 699, 17, 49, "Output",ExpressionUUID->"f82b37cd-e051-401b-9d39-0db9c7dde282"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76776, 1774, 751, 18, 69, "Input",ExpressionUUID->"b8c26fee-991b-49d0-88ac-8d87697be743"],
+Cell[77530, 1794, 3273, 83, 98, "Output",ExpressionUUID->"dd2e2928-5a70-49fc-88d0-bb532cd37ff2"],
+Cell[80806, 1879, 3093, 53, 40, "Output",ExpressionUUID->"e744625e-a45d-4887-a4ac-11075e8f929d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83936, 1937, 867, 20, 69, "Input",ExpressionUUID->"2838218f-1240-4e13-99a7-2a592a29e5b1"],
+Cell[84806, 1959, 4846, 122, 119, "Output",ExpressionUUID->"137bec50-2e9c-48fc-bb2e-c88a15c845c6"],
+Cell[89655, 2083, 4322, 71, 40, "Output",ExpressionUUID->"2cf0b895-b905-4f89-8738-56d04f6af879"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[94014, 2159, 773, 19, 69, "Input",ExpressionUUID->"ae04ad66-9792-4cb6-8220-30078424c4b8"],
+Cell[94790, 2180, 4742, 115, 119, "Output",ExpressionUUID->"99d1552f-8df0-4552-baa2-c2a8b2605cc9"],
+Cell[99535, 2297, 4343, 71, 63, "Output",ExpressionUUID->"ca368f21-bb0d-4222-858a-ebd1efbcd9ca"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
